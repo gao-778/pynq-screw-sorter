@@ -1,0 +1,6 @@
+# Recorded runtime; CUDA 12.8 PyTorch wheel installed from the official index.
+numpy==2.4.6
+torch==2.7.1+cu128
+Pillow==9.4.0
+opencv-python==5.0.0.93
+# CPU reference/export may also run with torch 2.5.1+cpu; recorded in reports.

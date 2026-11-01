@@ -1,0 +1,14 @@
+{
+  "status": "USER_CONFIRMED",
+  "proposal": {
+    "old/B": "NUT_L",
+    "new/L": "NUT_L",
+    "old/M": "NUT_M",
+    "new/M": "NUT_M",
+    "old/S": "NUT_S",
+    "new/S": "NUT_S"
+  },
+  "user_confirmed": true,
+  "metric_thread_spec_confirmed": false,
+  "note": "Public summary of the confirmed physical-size mapping. Private conversation identifiers omitted; historical training logic is unchanged."
+}

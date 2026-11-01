@@ -1,0 +1,325 @@
+{
+  "schema": "platform-plane-calibration-v1",
+  "source_frame": "frame_1793437312_gray.bin",
+  "image_size_px": [
+    1280,
+    960
+  ],
+  "units": "mm",
+  "axis_definition": "+X screen-right; +Y screen-up; aligned with square sides",
+  "center_definition": "black ink dot binary area centroid",
+  "origin_screen_px": [
+    652.0486725663717,
+    500.03982300884957
+  ],
+  "origin_raw_px": [
+    626.9513274336283,
+    458.96017699115043
+  ],
+  "dot_offset_from_nominal_square_origin_mm": [
+    0.11446596021072965,
+    0.4288586519987021
+  ],
+  "H_screen_px_to_mm": [
+    [
+      0.16277201300944072,
+      0.0019175283298659795,
+      -107.09411554044266
+    ],
+    [
+      0.0017362168772174413,
+      -0.16259061618386406,
+      80.16968502940222
+    ],
+    [
+      1.5023148488759798e-05,
+      1.6236148226416904e-05,
+      1.0
+    ]
+  ],
+  "H_raw_px_to_mm": [
+    [
+      -0.15730031022492183,
+      -0.001853069182940562,
+      99.47012326141551
+    ],
+    [
+      -0.001677852650186297,
+      0.15712501118911418,
+      -71.06219099882
+    ],
+    [
+      -1.451813413218598e-05,
+      -1.569035797772597e-05,
+      1.0
+    ]
+  ],
+  "observations": [
+    {
+      "side_mm": 40,
+      "corners_screen_px": [
+        [
+          531.222854526477,
+          371.50349159053485
+        ],
+        [
+          779.1334851333271,
+          376.847485355348
+        ],
+        [
+          775.2258607671046,
+          629.69409819901
+        ],
+        [
+          524.1815049706705,
+          626.3650793128634
+        ]
+      ],
+      "nominal_square_mm": [
+        [
+          -20.0,
+          20.0
+        ],
+        [
+          20.0,
+          20.0
+        ],
+        [
+          20.0,
+          -20.0
+        ],
+        [
+          -20.0,
+          -20.0
+        ]
+      ],
+      "edge_quality": [
+        {
+          "samples": 450,
+          "edge_residual_rms_px": 0.1798482150188041,
+          "median_ink_contrast": 49.099999999999994
+        },
+        {
+          "samples": 450,
+          "edge_residual_rms_px": 0.20481895491748542,
+          "median_ink_contrast": 58.0
+        },
+        {
+          "samples": 450,
+          "edge_residual_rms_px": 0.14646746707323124,
+          "median_ink_contrast": 97.0
+        },
+        {
+          "samples": 450,
+          "edge_residual_rms_px": 0.21820167159889065,
+          "median_ink_contrast": 79.19999999999999
+        }
+      ]
+    },
+    {
+      "side_mm": 80,
+      "corners_screen_px": [
+        [
+          405.3179229178935,
+          253.3371918497131
+        ],
+        [
+          903.9407980048189,
+          254.45641335623716
+        ],
+        [
+          901.6837719263375,
+          756.9075465132105
+        ],
+        [
+          397.9315200532221,
+          752.0516298367506
+        ]
+      ],
+      "nominal_square_mm": [
+        [
+          -40.0,
+          40.0
+        ],
+        [
+          40.0,
+          40.0
+        ],
+        [
+          40.0,
+          -40.0
+        ],
+        [
+          -40.0,
+          -40.0
+        ]
+      ],
+      "edge_quality": [
+        {
+          "samples": 450,
+          "edge_residual_rms_px": 0.3437162868694928,
+          "median_ink_contrast": 43.0
+        },
+        {
+          "samples": 450,
+          "edge_residual_rms_px": 0.2730483688747609,
+          "median_ink_contrast": 61.19999999999999
+        },
+        {
+          "samples": 450,
+          "edge_residual_rms_px": 0.36119880228174495,
+          "median_ink_contrast": 103.0
+        },
+        {
+          "samples": 450,
+          "edge_residual_rms_px": 0.3549504016331129,
+          "median_ink_contrast": 79.0
+        }
+      ]
+    },
+    {
+      "side_mm": 120,
+      "corners_screen_px": [
+        [
+          282.437822479881,
+          129.61985158365277
+        ],
+        [
+          1031.1769094028627,
+          132.824706035727
+        ],
+        [
+          1023.7101101686028,
+          889.0857000507151
+        ],
+        [
+          272.56598510311716,
+          873.9000909690752
+        ]
+      ],
+      "nominal_square_mm": [
+        [
+          -60.0,
+          60.0
+        ],
+        [
+          60.0,
+          60.0
+        ],
+        [
+          60.0,
+          -60.0
+        ],
+        [
+          -60.0,
+          -60.0
+        ]
+      ],
+      "edge_quality": [
+        {
+          "samples": 450,
+          "edge_residual_rms_px": 0.3419454052058092,
+          "median_ink_contrast": 38.0
+        },
+        {
+          "samples": 450,
+          "edge_residual_rms_px": 0.2711757951791689,
+          "median_ink_contrast": 62.0
+        },
+        {
+          "samples": 450,
+          "edge_residual_rms_px": 0.693467944484711,
+          "median_ink_contrast": 89.1
+        },
+        {
+          "samples": 450,
+          "edge_residual_rms_px": 0.6447565694268979,
+          "median_ink_contrast": 63.0
+        }
+      ]
+    }
+  ],
+  "leave_one_square_out_validation": [
+    {
+      "held_out_side_mm": 40,
+      "rms_mm": 0.7359041798732754,
+      "max_mm": 1.2745125247473217,
+      "corner_error_mm": [
+        1.2745125247473217,
+        0.6488926342947728,
+        0.2402457836402911,
+        0.25111348964779323
+      ]
+    },
+    {
+      "held_out_side_mm": 80,
+      "rms_mm": 0.3364153895179998,
+      "max_mm": 0.4437913474532651,
+      "corner_error_mm": [
+        0.4437913474532651,
+        0.14337454691078472,
+        0.33066261878997977,
+        0.3547625529518093
+      ]
+    },
+    {
+      "held_out_side_mm": 120,
+      "rms_mm": 0.7572353806688851,
+      "max_mm": 0.8967863643489306,
+      "corner_error_mm": [
+        0.7417146675655495,
+        0.45546902268564643,
+        0.8554549812566065,
+        0.8967863643489306
+      ]
+    }
+  ],
+  "all_square_corner_fit_rms_mm": 0.4072055740731413,
+  "fov_corner_coordinates_mm_TL_TR_BR_BL": [
+    [
+      -107.09411554044266,
+      80.16968502940222
+    ],
+    [
+      99.18547910572885,
+      80.83705419467442
+    ],
+    [
+      99.47012326141551,
+      -71.06219099882
+    ],
+    [
+      -103.64146002710238,
+      -74.59326399887553
+    ]
+  ],
+  "central_axis_fov_mm": [
+    204.64254446149795,
+    153.30763125824694
+  ],
+  "axis_edge_coordinates_mm_left_right_top_bottom": [
+    [
+      -105.30558471470253,
+      0.0
+    ],
+    [
+      99.33695974679542,
+      0.0
+    ],
+    [
+      0.0,
+      80.5161628796054
+    ],
+    [
+      0.0,
+      -72.79146837864155
+    ]
+  ],
+  "limitations": [
+    "Nominal hand-drawn sizes are not an independent calibrated ruler.",
+    "Physical platform borders are not visible; only camera field is estimated.",
+    "Valid for this fixed camera/crop/focus and this reference plane.",
+    "No explicit lens distortion or object height/parallax correction.",
+    "Accuracy away from the 120 mm square is extrapolated."
+  ]
+}

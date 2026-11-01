@@ -1,0 +1,79 @@
+{
+  "format": "FNET-v1",
+  "hardware_id": "0x4D433138",
+  "hardware_name": "MC18",
+  "weights": 255510,
+  "biases": 402,
+  "shifts": 3,
+  "trainable_parameters": 255912,
+  "model_sha256": "334794129d1a22f804646550d26a5ec613a87c317f978a6852cc120449f08772",
+  "class_names": [
+    "M3_5",
+    "M3_4",
+    "M3_1",
+    "M4_5",
+    "M4_3",
+    "M4_1",
+    "M5_5",
+    "M5_4",
+    "M5_1",
+    "M3_2",
+    "M3_3",
+    "M4_2",
+    "M4_4",
+    "M5_2",
+    "M5_3",
+    "NUT_L",
+    "NUT_M",
+    "NUT_S"
+  ],
+  "channels": [
+    1,
+    32,
+    96,
+    256
+  ],
+  "dilation": [
+    2,
+    2,
+    2
+  ],
+  "padding": [
+    2,
+    2,
+    2
+  ],
+  "roi_size": 64,
+  "features": 355,
+  "feature_order": [
+    "deep_gap256",
+    "middle_gap96_prepool",
+    "geometry3"
+  ],
+  "gap_shifts": [
+    8,
+    10
+  ],
+  "shift_values": [
+    6,
+    6,
+    6
+  ],
+  "native_image_size": [
+    1280,
+    960
+  ],
+  "threshold_contract": "CENTER8_P90_SPREAD3_CLAMP40_220_V1",
+  "threshold_formula": "histogram(gray[4::8,4::8]), T=clamp(P90+max(8,3*(P90-P50)),40,220)",
+  "roi_contract": "inclusive AABB; ceil_sqrt(w*w+h*h); integer Q8 16-angle rotation; floor(u*side/64)-floor(side/2); same frame T for CCL/moments/geometry/mask; raw gray>>1; outside AABB/image=0",
+  "geometry": "sat127(projected_length>>1), sat127(2*max_end_width), sat127(2*min_end_width); horizontal supported triples",
+  "bias_base": "0xE800",
+  "shift_base": "0xEF00",
+  "weight_port": "0x0070",
+  "requires": "MC18 hardware with 18-class high bit ABI; older 15-class bitstreams are incompatible",
+  "test_status": "COMPLETED_AFTER_FREEZE; screened ROI classification, historical old15 internal regression",
+  "test_report_sha256": "76221db20164bded9bf08105ece874406f390123b8659308e97bf60031a80910",
+  "test_coverage_report_sha256": "94fc47a7387199fb158d558c17a10baa61ef57da290a9e1555aba81fe4040326",
+  "label_mapping_status": "USER_CONFIRMED: historical B=new L, M=M, S=S are the same three physical sizes; metric thread specifications remain unspecified",
+  "packed_parameter_bytes": 257130
+}

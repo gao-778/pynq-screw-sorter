@@ -1,0 +1,295 @@
+{
+  "format": 1,
+  "part": "xc7z020clg400-1",
+  "top": "camera_sd_system_wrapper",
+  "vivado_version": "2026.1",
+  "rtl": [
+    {
+      "path": "rtl/st7789_clock_divider.v",
+      "sha256": "19da01f231a53736d2aae3035f7ecd26a23d7fa195187d78636715636d9621bd"
+    },
+    {
+      "path": "rtl/i2c_baseline_init.v",
+      "sha256": "a8a17efd14076bc09c395aca357c380c5669410702f5b90ec4f13e7faf4e4667"
+    },
+    {
+      "path": "rtl/st7789_camera_control.v",
+      "sha256": "1e02fa55515682a83596bea4dfd7a17d47cf101d641b166056581717584d8fb4"
+    },
+    {
+      "path": "rtl/ov5640_capture.v",
+      "sha256": "af349569cd18471ef9c5a62f6bf490b0302fc6e6cb6256c4822db85545f816d6"
+    },
+    {
+      "path": "rtl/st7789_ready_sync.v",
+      "sha256": "65f7853c0fb62fc32d05e0b1c5cd8f091a0d7434a5a070776df665b3ac71d963"
+    },
+    {
+      "path": "rtl/platform_axes_layout.vh",
+      "sha256": "86b4065d695447f865a7424fb90411fbf2336b892314ec413a5fa8e30f401bd3"
+    },
+    {
+      "path": "rtl/platform_axes_overlay.v",
+      "sha256": "75d82f066d21f1eb9f1c2243570bb535c5ff131fb8b95d82271285022470dd6b"
+    },
+    {
+      "path": "rtl/preview_shadow_chroma.v",
+      "sha256": "a756ca900167a3131d9e3996ac2576400fa7456cf915cac591771b8026729f9b"
+    },
+    {
+      "path": "rtl/tmds_encoder.v",
+      "sha256": "944b73e9312d1cbaf77959797761ae9adc0200004736d872c7777ccb8c5c4cec"
+    },
+    {
+      "path": "rtl/hdmi_recognition_display.v",
+      "sha256": "44f1daf08b4ab99443336b4e3d70099d0d3c321af9f6e9eedd8a597eeb3a0fd1"
+    },
+    {
+      "path": "rtl/hdmi_clocks.v",
+      "sha256": "5f26b8834ba16b2371fa3fa3d57976a9b6f649ea47d605540d462c11fa5c40c0"
+    },
+    {
+      "path": "rtl/hdmi_serial.v",
+      "sha256": "cda8062968ffa5fae86729e4e986d229ae6d8edc4b7b65669151890c7217c4bf"
+    },
+    {
+      "path": "rtl/st7789_status.v",
+      "sha256": "1351a69936b4ee9f6fb8564ad462b82f939a881b911f41a3a7916f989e4d1a36"
+    },
+    {
+      "path": "rtl/snapshot_control.v",
+      "sha256": "166b934b886bec4cc910425efce93af792344098898d58b9608f4f62e5bd3a48"
+    },
+    {
+      "path": "rtl/cnn_classifier.v",
+      "sha256": "5cafd63e55152dae041b992e1b13dfae97ceb2ddd6a3fd35ee85c09aa96ca6d3"
+    },
+    {
+      "path": "rtl/component_labeler.v",
+      "sha256": "bce51e662bfee1eaf09803d5437727dfe316c72b6849852c00c5d37ff8a31200"
+    },
+    {
+      "path": "rtl/frame_adaptive_threshold.v",
+      "sha256": "255e63cc99e73dfe04f954fa9657bb12fb3c6b991fe330c54b8867a514af71bf"
+    },
+    {
+      "path": "rtl/frame_snapshot.v",
+      "sha256": "306eac675162819cc29c70efbd4534a1ec4a47b3e17d6eebdc63e1cf2b47e417"
+    },
+    {
+      "path": "rtl/obb_orientation.v",
+      "sha256": "f6c9fff3504a75b5ed5457d49b117f50d98208ee5d369a1c28b4b2aac307027b"
+    },
+    {
+      "path": "rtl/roi_sampler_obb.v",
+      "sha256": "b6cd1a0cdb94885a992b87a2e9a90ee0718792024d07d92b90ea2768aef1b4b3"
+    },
+    {
+      "path": "rtl/temporal_object_filter.v",
+      "sha256": "3306b5a96c9a172c1b9caebde26d531d760d5d8322487c7dadafa464aa8ab4d1"
+    },
+    {
+      "path": "rtl/recognition_core_obb.v",
+      "sha256": "d6a9e423a66afb31eb81ed3d6cb883e50c49eccb9f7107f4c4a7bf3f4925c6ca"
+    },
+    {
+      "path": "rtl/overlay_color_buffer.v",
+      "sha256": "b417724c08ee10c4ea4656947553941e0e7a67de9674b6794c0a6da45acc087e"
+    },
+    {
+      "path": "rtl/detection_overlay_obb.v",
+      "sha256": "38d2bc091182bb6f16963855b302344d19c1c15aaaddbd3f0dfd9c3b7271d292"
+    },
+    {
+      "path": "rtl/video_reset_bridge.v",
+      "sha256": "911cc8cce5d1169d0d07018c38f01d322658686c951a39f806b8ddad15c77f58"
+    },
+    {
+      "path": "rtl/ddr_gray_reader.v",
+      "sha256": "0bfed86a4cb5248023070e92a3e358c444b080f0862f7cba765c3d578e64cd92"
+    },
+    {
+      "path": "rtl/preview_area_average.v",
+      "sha256": "72b6d7edf89fe9fd8542148ce1e8a42309df381177a03a8bb812736b05bd5459"
+    },
+    {
+      "path": "rtl/ddr_preview.v",
+      "sha256": "8f97b0baadbb2f3f6c74eefaf99c582d4e3d124a335e04069730f1f5dc1a237a"
+    },
+    {
+      "path": "rtl/sidebar_mint_theme.v",
+      "sha256": "55f18e3a80acdd514eaa1e17480cb5d302fa8fcbd43800df17f43a040fdc88cd"
+    },
+    {
+      "path": "rtl/screw_dashboard.v",
+      "sha256": "23938f2078e089d44803a312c894eecf2aa2d87f33d59d625dd60a4fa5f17e1e"
+    },
+    {
+      "path": "rtl/snapshot_stream.v",
+      "sha256": "9c2140b06d1e2d8d4b421e1deb9652597b3134b76619aea04460a748020af101"
+    },
+    {
+      "path": "rtl/joystick_inputs.v",
+      "sha256": "c537e68dfd6a0279c9df95c728a04f695baa4ddf98ad7a0c45626e69594fdb88"
+    },
+    {
+      "path": "rtl/target_inspector.v",
+      "sha256": "81103de43ae4fac1a1a85e23604a5a65c946dc7975d84efc7a9877706acb0326"
+    },
+    {
+      "path": "rtl/servo_rx_guard.v",
+      "sha256": "19d1e1fd3693f820136ad09d513440214c2e8e325cf9b2170cd19d82340e9161"
+    }
+  ],
+  "constraints": [
+    {
+      "path": "constraints/camera_sd.xdc",
+      "sha256": "e406640d363404cf978a89df7c85a1232d78462b24fe07e266b7159a253c8ce5",
+      "used_in": [
+        "synthesis",
+        "implementation"
+      ]
+    },
+    {
+      "path": "constraints/joystick_pins.xdc",
+      "sha256": "46911dfcb17e17621c6c1de0434036918682dac699629f1c48e5cd817c19fe3d",
+      "used_in": [
+        "synthesis",
+        "implementation"
+      ]
+    },
+    {
+      "path": "constraints/arm_fusion_io.xdc",
+      "sha256": "6072eb9111a8fadc6c138b78004d7ea800376f86605a0d671e95ba46c70d9a66",
+      "used_in": [
+        "synthesis",
+        "implementation"
+      ]
+    },
+    {
+      "path": "constraints/dont_touch.xdc",
+      "sha256": "396091ed89ffbd2f0c6928c5e9c2cb0de3e7fb7a86d0ad13aac991848f1b0a52",
+      "used_in": [
+        "synthesis"
+      ]
+    },
+    {
+      "path": "constraints/recognition_cdc.xdc",
+      "sha256": "f23dbdd56133ca1313821aee464340a83e2be38a1ea5b07f164bd65955cb6d9e",
+      "used_in": [
+        "implementation"
+      ]
+    },
+    {
+      "path": "constraints/joystick_cdc.xdc",
+      "sha256": "ea34f484f84b232bfad79827be5112ea7de2c25b7ccf888126549b1e5246c967",
+      "used_in": [
+        "implementation"
+      ]
+    },
+    {
+      "path": "constraints/dashboard_cdc.xdc",
+      "sha256": "9eee5f605194ed2b8d308c3a95e026df0567f0425aa77fe58f67e8e7a5407c61",
+      "used_in": [
+        "implementation"
+      ]
+    },
+    {
+      "path": "constraints/preview_cdc.xdc",
+      "sha256": "d956a6e157bd447f96f86bcd30cdf047c1b090037102cef060a008f158cf4265",
+      "used_in": [
+        "implementation"
+      ]
+    },
+    {
+      "path": "constraints/hide_cdc.xdc",
+      "sha256": "d5de217d1ebc88bfcf8d7df6ef0521e02fe426e39b5840df84605ea745548cbf",
+      "used_in": [
+        "implementation"
+      ]
+    },
+    {
+      "path": "constraints/classcolor_cdc.xdc",
+      "sha256": "73fa1ad59375e5b43e402a053be9676e63fd425991854422aa7607e4d00e522b",
+      "used_in": [
+        "synthesis",
+        "implementation"
+      ]
+    }
+  ],
+  "external_rom": [
+    {
+      "filename": "dashboard_text.mem",
+      "sha256": "018e2c1179fa3502c260624d0de1d23828a6347f4381f6f419044e50ee148a7c",
+      "bytes": 24576
+    },
+    {
+      "filename": "axes_glyphs.hex",
+      "sha256": "d6c1c93990f54bc1b377de0e06b62713bd63ac7cb85039cdbc43d6142f67b4bc",
+      "bytes": 12288
+    },
+    {
+      "filename": "axes_horizontal.hex",
+      "sha256": "ad4dbf825f5e154e22f4948405738a5c2b363bed12f921a9c32cc795d0403a78",
+      "bytes": 14336
+    },
+    {
+      "filename": "axes_vertical.hex",
+      "sha256": "d62f3c5f7f18552fa55f525e3d9e288707a836043f53cf43b17213d0faf1c324",
+      "bytes": 14336
+    },
+    {
+      "filename": "dashboard_font.hex",
+      "sha256": "656f3c4c2127b957ea2bf72bfe774bdb3ea99904adf173d917aff6c39a48626d",
+      "bytes": 32768
+    }
+  ],
+  "external_rtl": [
+    {
+      "filename": "ov5640_baseline_rom.v",
+      "sha256": "d6cb2dd43a2918fccfd66d5afe0183cbeb41c5a1e98804a0165f32ab5dd669f6"
+    }
+  ],
+  "scripts": [
+    {
+      "path": "bd/camera_sd_system.tcl",
+      "sha256": "1e4cd8a0d1bfb67cff2db14c77b55d24110298232c783c022d5b2d1dabb90f9f"
+    },
+    {
+      "path": "tcl/check_all_cdc.tcl",
+      "sha256": "c671df97dd4fcb844e535eb65b287eb90e9a389adc505febd20706dcd9c67d68"
+    },
+    {
+      "path": "tcl/check_classcolor_cdc.tcl",
+      "sha256": "d571c1074a974273990318c524df8e22995444579876948725f4aa0976ab3879"
+    },
+    {
+      "path": "tcl/check_final_timing.tcl",
+      "sha256": "7271ab2729ae3c94821d66f9fd113b32bcbff17c1c4db10b54f0f6ef11ed5188"
+    },
+    {
+      "path": "tcl/check_hd_cdc.tcl",
+      "sha256": "ca65f278d6533c4cc71e3e5ac58c09e58e96a16960e423251ffd5692d9533f2f"
+    },
+    {
+      "path": "tcl/check_hide_cdc.tcl",
+      "sha256": "9cef41ddf74685b86c8c8ceef52c44bd015ba47f2609b020699787bc1bf6c250"
+    },
+    {
+      "path": "tcl/check_timing_coverage.tcl",
+      "sha256": "4d75322c420430e89525d05609fd0b271a071476ea806c277f81737eb1c340cc"
+    },
+    {
+      "path": "tcl/create_project.tcl",
+      "sha256": "c9130c14b05591f35680fa397d113a50e01f602ec5c090f012465a9cd35ca9ef"
+    },
+    {
+      "path": "tcl/restore_ip_constraints.tcl",
+      "sha256": "616a0448a53230429ba9b37519da0c21b6bb18d95f29e5002530f635ea7e2a56"
+    },
+    {
+      "path": "tcl/vivado_appinit.tcl",
+      "sha256": "6e0998835b42a5d68ab583dc71944e74ea44fddb3a6b0a7677d153fd4bad874e"
+    }
+  ]
+}
