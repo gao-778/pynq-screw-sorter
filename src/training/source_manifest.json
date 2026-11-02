@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "files": {
+    "README.md": "40d1942d06ee4fb60dd2f9fc45a77bf099588cab572bcb7e3a18d79e34b25bc2",
+    "mc18/audit_latent_dither.py": "d37dee869898e07157fecae226bb091fc7cd1e41d947e3cab9e05e10123de8f3",
+    "mc18/classes.json": "ff29e91db7950af2c0fd9f8e0e564e3a90f9b94b0396717f8e4826ca6b1a4935",
+    "mc18/export_model.py": "13537e2223bee707ad291b378def538462886668362e3b30b0980f802b9010ea",
+    "mc18/finalize_training_reports.py": "04cb18d3dfec91ddbf21b5fd0af260395e573cf845a10091e87674caddc79867",
+    "mc18/freeze_validated_progress.py": "0754766ab473047e0d86f53907354e92b98db32315517ccae5d6db43bcd2ae1c",
+    "mc18/generate_hardware_case.py": "bccb887f61a5bf79409e8d7da70d254684a3120e8adb53fdc51f81b31f2fcfeb",
+    "mc18/label_mapping_status.json": "b542d0f1b11cd7f99955aca502ea87955e3bec37e9f8aeed1497c42738388396",
+    "mc18/model_contract.py": "b8e907c7d00681ee8ef1ef191a94ea8a9fbd5a21b7db834217fae4f3a0ca8db6",
+    "mc18/prepare_data.py": "0947365f81ab92dd204559689610c9254d2bfd194535d7bde07c50d80eda178a",
+    "mc18/prepare_reproduction_inputs.py": "3aa101dcab0a350f283b09e73d1b1c76082c31c9dad0ef05795c409491ee2caf",
+    "mc18/requirements.txt": "e562bb755b7a93160b394e14621a155f62d2635e5456a414585a2e288d4b6c2b",
+    "mc18/settings.py": "a7cb2129bf9ad8ece3da70004a36220d37e839612d9f956602a01752265270bc",
+    "mc18/summarize_dataset.py": "0f286793bcb5a5322268894a70d59fd17a91eb3e98403bddabcc95806c0450dc",
+    "mc18/train_model.py": "b530cb157bc3bda0469892376ba931d453e148b1c843f4380c5b592ab144263a",
+    "mc18/warmup_nut_head.py": "22205baf44c4214a7a9241d6609afd4ec497575a7baf0c08081aa270227a46bc",
+    "mc18/reproducibility_inputs/teacher.npz": "66f16a8e5c8ee3c50b01c30f81c417a1aa3503424a09931cb8f4b1ce10ee41ce",
+    "mc18/reproducibility_inputs/legacy/adaptive_threshold_reference.py": "975e9aafb6eb25f3da25439923e8ff52b3c7ea6afa6543353ef11ff10c4b02e2",
+    "mc18/reproducibility_inputs/legacy/auto_obb_reference.py": "8efae22354ef365d6e549611e1d11590719069f02d8c68dbc60f03ca7de08452",
+    "mc18/reproducibility_inputs/legacy/photometric_source.py": "9050be11a9c72604c80f6ffac7777aa722fb83ecf67b4feabaecbe654ede3943",
+    "mc18/reproducibility_inputs/legacy/prepare_dataset.py": "1d9c4261d2717bfbcb7157c3d4ed341a22b5b28002ca1fa6ccf9405929c76051",
+    "mc18/reproducibility_inputs/legacy/shape_obb_reference.py": "04362ace5c0d18114ee361071f72e859ef97ee8d041b604d9461fec202e4b3e8"
+  }
+}

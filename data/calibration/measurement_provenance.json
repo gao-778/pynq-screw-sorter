@@ -1,0 +1,40 @@
+{
+  "source_frame": "frame_1793437312_gray.bin",
+  "source_frame_sha256": "96532867c90894aeda5c22dc29c4c240d3aedde4b7fc72d51430325dbcf42d35",
+  "image_size_raw_px": [
+    1280,
+    960
+  ],
+  "screen_rotation_degrees": 180,
+  "old_observations_used": false,
+  "frozen_primary_image": true,
+  "point_count": 12,
+  "line_count": 12,
+  "dot_threshold": 170,
+  "dot_search_roi_screen_xywh": [
+    632,
+    480,
+    42,
+    43
+  ],
+  "origin_local_jacobian_mm_per_px": [
+    [
+      0.15990734572302662,
+      0.0018837812466149049
+    ],
+    [
+      0.0017056607416878443,
+      -0.15972914134916083
+    ]
+  ],
+  "origin_local_horizontal_mm_per_px": 0.15991644222764992,
+  "origin_local_vertical_mm_per_px": 0.15974024924209082,
+  "header_sha256": "3bf5dab22619691a5d48b40d599dcc3fc8d46cae66225d23c5962a8e0a2faae0",
+  "calibration_json_sha256": "4ce32f8db04afadef565a55aa9d4c9e65a126dc0979a947b9f911022fd149672",
+  "rebuild_verified_byte_identical": true,
+  "robot_base_user_definition_mm": [
+    0,
+    -150
+  ],
+  "robot_base_verified_with_ruler": false
+}

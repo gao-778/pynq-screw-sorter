@@ -1,0 +1,39 @@
+xvlog rt_unified_20261102/src/fpga/rtl/ddr_gray_reader.v" into library work
+INFO: [VRFC 10-311] analyzing module ddr_gray_reader
+INFO: [VRFC 10-2263] Analyzing Verilog file "${WORKSPACE}/src/fpga/rtl/ddr_preview.v" into library work
+INFO: [VRFC 10-311] analyzing module ddr_preview
+INFO: [VRFC 10-2263] Analyzing Verilog file "${WORKSPACE}/sim/tests/tb_pynq_memory.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_pynq_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "${AMD_ROOT}/data/verilog/src/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+
+xelab 
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=1...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_cdc_gray(DEST_SYNC_FF=3,INIT...
+Compiling module xpm.xpm_fifo_reg_vec(REG_WIDTH=11)
+Compiling module xpm.xpm_cdc_gray(DEST_SYNC_FF=5,INIT...
+Compiling module xpm.xpm_fifo_reg_vec(REG_WIDTH=12)
+Compiling module xpm.xpm_cdc_gray(DEST_SYNC_FF=3,INIT...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=2...
+Compiling module xpm.xpm_fifo_base(COMMON_CLOCK=0,FIF...
+Compiling module xpm.xpm_fifo_async(FIFO_MEMORY_TYPE=...
+Compiling module work.ddr_preview
+Compiling module work.tb_pynq_memory
+Compiling module work.glbl
+Built simulation snapshot tb_pynq_memory
+
+xsim n Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Mon Nov  2 23:36:39 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_pynq_memory/xsim_script.tcl
+# xsim {tb_pynq_memory} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS PYNQ_MEMORY: relocated gray/preview bank addresses; stalled AR/AW and read/write/B shutdown drain; no restart after run=0
+$finish called at time : 59310 ns : File "${WORKSPACE}/sim/tests/tb_pynq_memory.v" Line 80
+exit
+INFO: [Common 17-206] Exiting xsim at Mon Nov  2 23:36:41 2026...
+

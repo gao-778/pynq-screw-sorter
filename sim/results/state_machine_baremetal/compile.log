@@ -1,0 +1,23 @@
+In file included from ${WORKSPACE}\sim\output\state_machine_baremetal\xtimer_config.h:8,
+                 from ${WORKSPACE}\sim\output\state_machine_baremetal\bsp.h:7,
+                 from ${WORKSPACE}\sim\output\state_machine_baremetal\test_migrated.c:4:
+${WORKSPACE}\sim\output\state_machine_baremetal\xparameters.h:472:9: warning: ISO C99 requires whitespace after the macro name
+  472 | #define XPS_BOARD_PYNQ-Z2
+      |         ^~~~~~~~~~~~~~
+In file included from ${WORKSPACE}\sim\output\state_machine_baremetal\test_migrated.c:4:
+${WORKSPACE}\sim\output\state_machine_baremetal\bsp.h:8: warning: "XPAR_XUARTPS_0_BASEADDR" redefined
+    8 | #define XPAR_XUARTPS_0_BASEADDR 0xe0000000U
+      | 
+In file included from ${WORKSPACE}\sim\output\state_machine_baremetal\xtimer_config.h:8,
+                 from ${WORKSPACE}\sim\output\state_machine_baremetal\bsp.h:7,
+                 from ${WORKSPACE}\sim\output\state_machine_baremetal\test_migrated.c:4:
+${WORKSPACE}\sim\output\state_machine_baremetal\xparameters.h:358: note: this is the location of the previous definition
+  358 | #define XPAR_XUARTPS_0_BASEADDR 0xe0000000
+      | 
+${WORKSPACE}\sim\output\state_machine_baremetal\test_migrated.c: In function 'cells_auto':
+${WORKSPACE}\sim\output\state_machine_baremetal\test_migrated.c:299:2: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+  299 |  for(unsigned k=0;k<1800;++k)fprintf(f,"%04x\n",ui_cells[k]);fclose(f);
+      |  ^~~
+${WORKSPACE}\sim\output\state_machine_baremetal\test_migrated.c:299:62: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+  299 |  for(unsigned k=0;k<1800;++k)fprintf(f,"%04x\n",ui_cells[k]);fclose(f);
+      |                                                              ^~~~~~

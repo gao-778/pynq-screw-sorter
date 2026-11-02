@@ -1,0 +1,39 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "task": "统一 C 业务核心、模型、硬件与平台边界",
+      "status": "complete"
+    },
+    {
+      "id": 2,
+      "task": "统一构建、启动和 Notebook 入口",
+      "status": "complete"
+    },
+    {
+      "id": 3,
+      "task": "核对源码、硬件、模型、依赖和产物对应关系",
+      "status": "complete"
+    },
+    {
+      "id": 4,
+      "task": "整理开源许可与公开文件清单",
+      "status": "complete"
+    },
+    {
+      "id": 5,
+      "task": "重写使用文档并清理开发过程注释",
+      "status": "complete"
+    },
+    {
+      "id": 6,
+      "task": "运行两种目标的构建、回归和迁移检查",
+      "status": "complete"
+    },
+    {
+      "id": 7,
+      "task": "核对赛题目录并生成交付归档",
+      "status": "complete"
+    }
+  ]
+}

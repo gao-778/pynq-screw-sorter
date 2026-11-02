@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "name": "screwsort",
+  "version": "1.0.0",
+  "part": "xc7z020clg400-1",
+  "vivado": "2026.1",
+  "shared_sources": [
+    "src/common/app.c",
+    "src/common/arm_bus.c",
+    "src/common/arm_motion.c",
+    "src/dependencies/arm_kinematics.c"
+  ],
+  "targets": {
+    "linux": {
+      "define": "SCREWSORT_LINUX",
+      "sources": [
+        "src/platform/linux/linux_platform.c"
+      ]
+    },
+    "baremetal": {
+      "define": "SCREWSORT_BAREMETAL",
+      "sources": [
+        "src/platform/baremetal/baremetal_platform.c",
+        "src/platform/baremetal/main.c"
+      ]
+    }
+  },
+  "model": "data/model/model.bin",
+  "hardware": "board/hardware/screwsort",
+  "abi": "0x50594d32",
+  "model_id": "0x4d433138",
+  "static_buffers": {
+    "gray": "0x10000000",
+    "preview": "0x11000000",
+    "screen": "0x11400000"
+  }
+}

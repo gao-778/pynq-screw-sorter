@@ -1,8 +1,0 @@
-set_false_path -to [get_pins -hier -regexp {.*joystick_inputs/inst/reg_keys_meta_reg.*\/D}]
-set_false_path -to [get_pins -hier -regexp {.*inspector/inst/reg_command_sync_reg\[0\]/D}]
-set_false_path -to [get_pins -hier -regexp {.*dashboard/inst/reg_ack_sync_reg\[0\]/D}]
-# Selection status is informational only; two stages avoid metastability.
-set_false_path -to [get_pins -hier -regexp {.*dashboard/inst/reg_selection_meta_reg.*\/D}]
-# Command payload is held until a returned acknowledgement; three sync edges
-# plus a vertical-blank wait precede consumption in the video clock domain.
-set_max_delay -datapath_only 20.000 -from [get_cells -hier -regexp {.*dashboard/inst/reg_command_reg.*}] -to [get_cells -hier -regexp {.*inspector/inst/(FSM_sequential_state_current|reg_mode|cnt_label|flag_enabled|flag_selected|reg_anchor_x|reg_anchor_y|cnt_candidate|flag_best|reg_best_score|flag_tracking)_reg.*}]

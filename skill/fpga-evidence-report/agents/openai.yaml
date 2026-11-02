@@ -1,0 +1,4 @@
+interface:
+  display_name: "FPGA 验证与交付证据"
+  short_description: "组织黄金参考、实现报告和可复现构建，形成边界清楚且来源可追溯的工程交付。"
+  default_prompt: "使用 $fpga-evidence-report，结合提供的工程资料完成分析并给出可复用产物与适用边界。"

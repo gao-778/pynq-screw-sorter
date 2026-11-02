@@ -1,0 +1,41 @@
+{
+  "hardware_access": false,
+  "commands": [
+    {
+      "command": [
+        "${AMD_ROOT}\\Vivado\\bin\\xvlog.bat",
+        "${WORKSPACE}\\src\\fpga\\rtl\\preview_area_average.v",
+        "${WORKSPACE}\\src\\fpga\\rtl\\ddr_gray_reader.v",
+        "${WORKSPACE}\\src\\fpga\\rtl\\ddr_preview.v",
+        "${WORKSPACE}\\sim\\tests\\tb_pynq_memory.v",
+        "${AMD_ROOT}\\Vivado\\data\\verilog\\src\\glbl.v"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "${AMD_ROOT}\\Vivado\\bin\\xelab.bat",
+        "tb_pynq_memory",
+        "glbl",
+        "-L",
+        "xpm",
+        "-L",
+        "unisims_ver",
+        "-s",
+        "tb_pynq_memory",
+        "--debug",
+        "typical"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "${AMD_ROOT}\\Vivado\\bin\\xsim.bat",
+        "tb_pynq_memory",
+        "-runall"
+      ],
+      "returncode": 0
+    }
+  ],
+  "status": "PASS"
+}

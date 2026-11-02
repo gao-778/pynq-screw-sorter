@@ -1,0 +1,4 @@
+interface:
+  display_name: "半双工总线诊断"
+  short_description: "按事务阶段与设备反馈定位通信错误，保留故障快照并约束恢复行为。"
+  default_prompt: "使用 $servo-bus-diagnostics，结合提供的工程资料完成分析并给出可复用产物与适用边界。"

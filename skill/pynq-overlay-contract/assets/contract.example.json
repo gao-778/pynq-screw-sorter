@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "address_bits": 32,
+  "regions": [
+    {"name": "compute_control", "base": "0x43c00000", "bytes": "0x1000"}
+  ]
+}

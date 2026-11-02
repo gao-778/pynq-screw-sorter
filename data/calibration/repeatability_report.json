@@ -1,0 +1,211 @@
+{
+  "status": "PASS_WITH_SMALL_BOUNDARY_VARIATION",
+  "production_edited": false,
+  "acceptance_limit_mm": 0.5,
+  "warning": "Some fitted corners differ by about 2.22 pixels between captures; not perfectly pixel-stationary.",
+  "calibration_is_frozen_first_frame": true,
+  "calibration_json_sha256": "4ce32f8db04afadef565a55aa9d4c9e65a126dc0979a947b9f911022fd149672",
+  "header_sha256": "3bf5dab22619691a5d48b40d599dcc3fc8d46cae66225d23c5962a8e0a2faae0",
+  "distinct_image_contents": true,
+  "consecutive_camera_frames_verified": false,
+  "user_robot_base_definition_mm": [
+    0,
+    -150
+  ],
+  "old_homography_used_in_new_fit": false,
+  "recognition_frame_register_is_not_a_camera_frame_counter": true,
+  "observations": [
+    {
+      "file": "frame_1793437312_gray.bin",
+      "sha256": "96532867c90894aeda5c22dc29c4c240d3aedde4b7fc72d51430325dbcf42d35",
+      "recognition_frame_register": 1,
+      "recognition_status": "0x1e",
+      "capture_status": "0x1",
+      "origin_screen_px": [
+        652.0486725663717,
+        500.03982300884957
+      ],
+      "origin_change_px": 0.0,
+      "corner_change_max_px": 0.0,
+      "independent_fit_rms_mm": 0.4072055740731413,
+      "independent_H_screen": [
+        [
+          0.16277201300944072,
+          0.0019175283298659795,
+          -107.09411554044266
+        ],
+        [
+          0.0017362168772174413,
+          -0.16259061618386406,
+          80.16968502940222
+        ],
+        [
+          1.5023148488759798e-05,
+          1.6236148226416904e-05,
+          1.0
+        ]
+      ],
+      "transform_delta_max_mm_at_corners_origin_and_image_borders": 0.0,
+      "black_dot_mm_under_frozen_H": [
+        -1.3960754160533175e-14,
+        1.3960754160533175e-14
+      ]
+    },
+    {
+      "file": "frame_1793437379_gray.bin",
+      "sha256": "32b09e01b595dccabfa033ceb14e1b45111e09c6c23046a778f621f3eddae533",
+      "recognition_frame_register": 1,
+      "recognition_status": "0x1e",
+      "capture_status": "0x1",
+      "origin_screen_px": [
+        652.237885462555,
+        500.22907488986783
+      ],
+      "origin_change_px": 0.26761501181928693,
+      "corner_change_max_px": 2.2151341416617694,
+      "independent_fit_rms_mm": 0.38680511795229894,
+      "independent_H_screen": [
+        [
+          0.16261946898246124,
+          0.0020411161852662684,
+          -107.08760424526255
+        ],
+        [
+          0.001571369224595266,
+          -0.16246763111496285,
+          80.24612627185522
+        ],
+        [
+          1.3332007101939239e-05,
+          1.7378048405176394e-05,
+          1.0
+        ]
+      ],
+      "transform_delta_max_mm_at_corners_origin_and_image_borders": 0.3588618906991043,
+      "black_dot_mm_under_frozen_H": [
+        0.030612863250734958,
+        -0.029906133652772775
+      ]
+    },
+    {
+      "file": "frame_1793437420_gray.bin",
+      "sha256": "94db5b9d8572204e002c10bcbc8bc29e17b44a25863571f5ee189ee06fdcfed2",
+      "recognition_frame_register": 0,
+      "recognition_status": "0x6",
+      "capture_status": "0x1",
+      "origin_screen_px": [
+        652.1850220264317,
+        500.215859030837
+      ],
+      "origin_change_px": 0.2226653459697525,
+      "corner_change_max_px": 2.2181186761731158,
+      "independent_fit_rms_mm": 0.38620683916608767,
+      "independent_H_screen": [
+        [
+          0.16261938212917565,
+          0.0020454463266170874,
+          -107.08109000721137
+        ],
+        [
+          0.0015804280904885655,
+          -0.1624682922328498,
+          80.23848483552155
+        ],
+        [
+          1.3349965549601516e-05,
+          1.730859830614677e-05,
+          1.0
+        ]
+      ],
+      "transform_delta_max_mm_at_corners_origin_and_image_borders": 0.3516307770463213,
+      "black_dot_mm_under_frozen_H": [
+        0.022134786910738252,
+        -0.02788538230267052
+      ]
+    }
+  ],
+  "image_changes": [
+    {
+      "first": "frame_1793437312_gray.bin",
+      "other": "frame_1793437379_gray.bin",
+      "changed_pixels": 845312,
+      "absolute_pixel_difference_mean": 2.44931396484375
+    },
+    {
+      "first": "frame_1793437312_gray.bin",
+      "other": "frame_1793437420_gray.bin",
+      "changed_pixels": 962171,
+      "absolute_pixel_difference_mean": 4.453252766927084
+    }
+  ],
+  "dot_threshold_sensitivity": [
+    {
+      "threshold": 120,
+      "area_px": 158,
+      "origin_screen_px": [
+        652.0126582278481,
+        500.15822784810126
+      ],
+      "delta_mm": 0.019765193907310196
+    },
+    {
+      "threshold": 140,
+      "area_px": 188,
+      "origin_screen_px": [
+        652.2234042553191,
+        500.1010638297872
+      ],
+      "delta_mm": 0.029615725621092544
+    },
+    {
+      "threshold": 160,
+      "area_px": 217,
+      "origin_screen_px": [
+        652.0414746543779,
+        499.9769585253456
+      ],
+      "delta_mm": 0.01010904327545632
+    },
+    {
+      "threshold": 170,
+      "area_px": 226,
+      "origin_screen_px": [
+        652.0486725663717,
+        500.03982300884957
+      ],
+      "delta_mm": 1.9743487874782628e-14
+    },
+    {
+      "threshold": 180,
+      "area_px": 248,
+      "origin_screen_px": [
+        652.2056451612904,
+        499.9556451612903
+      ],
+      "delta_mm": 0.028463729751189423
+    },
+    {
+      "threshold": 190,
+      "area_px": 260,
+      "origin_screen_px": [
+        652.1769230769231,
+        499.9730769230769
+      ],
+      "delta_mm": 0.023104531188609452
+    },
+    {
+      "threshold": 200,
+      "area_px": 273,
+      "origin_screen_px": [
+        652.1355311355311,
+        499.97069597069594
+      ],
+      "delta_mm": 0.017734807334730155
+    }
+  ],
+  "limits": [
+    "Repeated images estimate extraction repeatability, not ruler accuracy.",
+    "White paper can overflow the screw foreground detector; its inference count may reset.",
+    "No physical motion or gripper validation performed."
+  ]
+}

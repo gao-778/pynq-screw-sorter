@@ -1,0 +1,955 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Sun Nov  1 21:18:35 2026
+| Host         : LAPTOP-R1EJQOBE running 64-bit major release  (build 9200)
+| Command      : report_drc -file pynq_final_drc.rpt
+| Design       : camera_sd_system_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_final_implemented
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max checks: <unlimited>
+             Checks found: 181
++-----------+----------+----------------------------+--------+
+| Rule      | Severity | Description                | Checks |
++-----------+----------+----------------------------+--------+
+| AVAL-70   | Warning  | OSERDES_DataRateTqTriWidth | 6      |
+| DPIP-1    | Warning  | Input pipelining           | 85     |
+| DPOP-1    | Warning  | PREG Output pipelining     | 43     |
+| DPOP-2    | Warning  | MREG Output pipelining     | 12     |
+| PLCK-12   | Warning  | Clock Placer Checks        | 1      |
+| REQP-1839 | Warning  | RAMB36 async control check | 12     |
+| REQP-1840 | Warning  | RAMB18 async control check | 19     |
+| REQP-165  | Advisory | writefirst                 | 1      |
+| REQP-181  | Advisory | writefirst                 | 2      |
++-----------+----------+----------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+AVAL-70#1 Warning
+OSERDES_DataRateTqTriWidth  
+Unexpected programming for camera_sd_system_i/serializer/inst/g_real_serdes.u_ch0/u_master with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+Related violations: <none>
+
+AVAL-70#2 Warning
+OSERDES_DataRateTqTriWidth  
+Unexpected programming for camera_sd_system_i/serializer/inst/g_real_serdes.u_ch0/u_slave with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+Related violations: <none>
+
+AVAL-70#3 Warning
+OSERDES_DataRateTqTriWidth  
+Unexpected programming for camera_sd_system_i/serializer/inst/g_real_serdes.u_ch1/u_master with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+Related violations: <none>
+
+AVAL-70#4 Warning
+OSERDES_DataRateTqTriWidth  
+Unexpected programming for camera_sd_system_i/serializer/inst/g_real_serdes.u_ch1/u_slave with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+Related violations: <none>
+
+AVAL-70#5 Warning
+OSERDES_DataRateTqTriWidth  
+Unexpected programming for camera_sd_system_i/serializer/inst/g_real_serdes.u_ch2/u_master with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+Related violations: <none>
+
+AVAL-70#6 Warning
+OSERDES_DataRateTqTriWidth  
+Unexpected programming for camera_sd_system_i/serializer/inst/g_real_serdes.u_ch2/u_slave with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP camera_sd_system_i/cam_cfg/inst/init_sequence/state2 input camera_sd_system_i/cam_cfg/inst/init_sequence/state2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP camera_sd_system_i/display/inst/shadow_chroma/dec_blue_rounded input camera_sd_system_i/display/inst/shadow_chroma/dec_blue_rounded/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP camera_sd_system_i/display/inst/shadow_chroma/dec_green_rounded input camera_sd_system_i/display/inst/shadow_chroma/dec_green_rounded/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP camera_sd_system_i/display/inst/shadow_chroma/dec_red_rounded input camera_sd_system_i/display/inst/shadow_chroma/dec_red_rounded/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[0].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[0].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[0].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[0].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[10].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[10].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[10].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[10].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[11].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[11].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[11].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[11].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[12].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[12].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[12].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[12].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[13].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[13].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[13].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[13].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[14].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[14].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[14].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[14].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[15].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[15].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[15].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[15].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#19 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[16].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[16].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#20 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[16].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[16].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#21 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[17].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[17].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#22 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[17].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[17].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#23 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[18].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[18].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#24 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[18].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[18].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#25 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[19].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[19].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#26 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[19].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[19].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#27 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[1].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[1].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#28 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[1].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[1].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#29 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[20].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[20].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#30 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[20].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[20].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#31 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[21].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[21].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#32 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[21].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[21].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#33 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[22].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[22].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#34 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[22].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[22].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#35 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[23].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[23].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#36 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[23].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[23].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#37 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[24].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[24].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#38 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[24].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[24].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#39 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[25].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[25].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#40 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[25].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[25].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#41 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[26].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[26].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#42 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[26].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[26].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#43 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[27].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[27].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#44 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[27].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[27].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#45 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[28].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[28].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#46 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[28].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[28].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#47 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[29].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[29].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#48 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[29].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[29].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#49 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[2].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[2].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#50 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[2].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[2].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#51 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[30].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[30].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#52 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[30].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[30].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#53 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[31].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[31].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#54 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[31].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[31].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#55 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[3].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[3].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#56 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[3].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[3].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#57 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[4].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[4].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#58 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[4].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[4].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#59 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[5].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[5].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#60 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[5].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[5].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#61 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[6].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[6].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#62 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[6].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[6].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#63 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[7].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[7].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#64 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[7].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[7].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#65 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[8].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[8].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#66 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[8].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[8].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#67 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[9].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[9].wire_sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#68 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[9].wire_sum input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[9].wire_sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#69 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/reg_accumulator0 input camera_sd_system_i/recognition/inst/cnn_classifier_Inst/reg_accumulator0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#70 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_mxx0 input camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_mxx0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#71 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_mxy0 input camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_mxy0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#72 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_project_y_reg input camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_project_y_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#73 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_score_a0 input camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_score_a0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#74 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_score_a_reg input camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_score_a_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#75 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_score_b0 input camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_score_b0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#76 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_score_b_reg input camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_score_b_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#77 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_xc_reg input camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_xc_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#78 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_xc_reg input camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_xc_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#79 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_yc_reg input camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_yc_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#80 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/roi_sampler_Inst/dec_rot_x0 input camera_sd_system_i/recognition/inst/roi_sampler_Inst/dec_rot_x0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#81 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/roi_sampler_Inst/dec_rot_y0 input camera_sd_system_i/recognition/inst/roi_sampler_Inst/dec_rot_y0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#82 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/roi_sampler_Inst/reg_prod_xc_reg input camera_sd_system_i/recognition/inst/roi_sampler_Inst/reg_prod_xc_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#83 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/roi_sampler_Inst/reg_prod_xs_reg input camera_sd_system_i/recognition/inst/roi_sampler_Inst/reg_prod_xs_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#84 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/roi_sampler_Inst/reg_trial_square0 input camera_sd_system_i/recognition/inst/roi_sampler_Inst/reg_trial_square0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#85 Warning
+Input pipelining  
+DSP camera_sd_system_i/recognition/inst/roi_sampler_Inst/reg_trial_square0 input camera_sd_system_i/recognition/inst/roi_sampler_Inst/reg_trial_square0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/cam_cfg/inst/init_sequence/state2 output camera_sd_system_i/cam_cfg/inst/init_sequence/state2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[0].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[0].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[10].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[10].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[11].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[11].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[12].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[12].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#6 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[13].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[13].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#7 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[14].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[14].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#8 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[15].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[15].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#9 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[16].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[16].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#10 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[17].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[17].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#11 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[18].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[18].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#12 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[19].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[19].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#13 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[1].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[1].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#14 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[20].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[20].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#15 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[21].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[21].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#16 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[22].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[22].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#17 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[23].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[23].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#18 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[24].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[24].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#19 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[25].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[25].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#20 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[26].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[26].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#21 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[27].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[27].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#22 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[28].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[28].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#23 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[29].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[29].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#24 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[2].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[2].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#25 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[30].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[30].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#26 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[31].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[31].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#27 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[3].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[3].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#28 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[4].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[4].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#29 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[5].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[5].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#30 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[6].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[6].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#31 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[7].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[7].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#32 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[8].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[8].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#33 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[9].wire_sum output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/gen_channel[9].wire_sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#34 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/cnn_classifier_Inst/reg_accumulator0 output camera_sd_system_i/recognition/inst/cnn_classifier_Inst/reg_accumulator0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#35 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_mxx0 output camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_mxx0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#36 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_mxy0 output camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_mxy0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#37 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_myy0 output camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_myy0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#38 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_score_a0 output camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_score_a0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#39 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_score_b0 output camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_score_b0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#40 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/roi_sampler_Inst/dec_rot_x0 output camera_sd_system_i/recognition/inst/roi_sampler_Inst/dec_rot_x0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#41 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/roi_sampler_Inst/dec_rot_y0 output camera_sd_system_i/recognition/inst/roi_sampler_Inst/dec_rot_y0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#42 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/roi_sampler_Inst/dec_scaled_x output camera_sd_system_i/recognition/inst/roi_sampler_Inst/dec_scaled_x/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#43 Warning
+PREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/roi_sampler_Inst/dec_scaled_y output camera_sd_system_i/recognition/inst/roi_sampler_Inst/dec_scaled_y/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP camera_sd_system_i/cam_cfg/inst/init_sequence/state2 multiplier stage camera_sd_system_i/cam_cfg/inst/init_sequence/state2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP camera_sd_system_i/display/inst/shadow_chroma/dec_blue_rounded multiplier stage camera_sd_system_i/display/inst/shadow_chroma/dec_blue_rounded/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP camera_sd_system_i/display/inst/shadow_chroma/dec_green_rounded multiplier stage camera_sd_system_i/display/inst/shadow_chroma/dec_green_rounded/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP camera_sd_system_i/display/inst/shadow_chroma/dec_red_rounded multiplier stage camera_sd_system_i/display/inst/shadow_chroma/dec_red_rounded/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_address_o_reg multiplier stage camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_address_o_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_score_a0 multiplier stage camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_score_a0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_score_a_reg multiplier stage camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_score_a_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_score_b0 multiplier stage camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_score_b0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#9 Warning
+MREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_score_b_reg multiplier stage camera_sd_system_i/recognition/inst/obb_orientation_Inst/reg_score_b_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#10 Warning
+MREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/roi_sampler_Inst/dec_scaled_x multiplier stage camera_sd_system_i/recognition/inst/roi_sampler_Inst/dec_scaled_x/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#11 Warning
+MREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/roi_sampler_Inst/dec_scaled_y multiplier stage camera_sd_system_i/recognition/inst/roi_sampler_Inst/dec_scaled_y/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#12 Warning
+MREG Output pipelining  
+DSP camera_sd_system_i/recognition/inst/roi_sampler_Inst/reg_trial_square0 multiplier stage camera_sd_system_i/recognition/inst/roi_sampler_Inst/reg_trial_square0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PLCK-12#1 Warning
+Clock Placer Checks  
+Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	cam_pclk_IBUF_inst (IBUF.O) is locked to W10
+	cam_pclk_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y2
+
+Related violations: <none>
+
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_sd_system_i/dashboard/inst/dashboard_text_bram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin camera_sd_system_i/dashboard/inst/dashboard_text_bram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/RSTRAMB (net: camera_sd_system_i/dashboard/inst/dashboard_text_bram/xpm_memory_base_inst/lopt) which is driven by a register (camera_sd_system_i/video_clock/inst/released_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_sd_system_i/detection_overlay/inst/color_buffer/reg_block_high_reg_0_0 has an input control pin camera_sd_system_i/detection_overlay/inst/color_buffer/reg_block_high_reg_0_0/ENARDEN (net: camera_sd_system_i/detection_overlay/inst/color_buffer/reg_block_high_reg_0_0_i_1_n_0) which is driven by a register (camera_sd_system_i/video_clock/inst/released_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_sd_system_i/detection_overlay/inst/color_buffer/reg_block_high_reg_0_1 has an input control pin camera_sd_system_i/detection_overlay/inst/color_buffer/reg_block_high_reg_0_1/ENARDEN (net: camera_sd_system_i/detection_overlay/inst/color_buffer/reg_block_high_reg_0_0_i_1_n_0) which is driven by a register (camera_sd_system_i/video_clock/inst/released_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_sd_system_i/detection_overlay/inst/color_buffer/reg_block_high_reg_0_2 has an input control pin camera_sd_system_i/detection_overlay/inst/color_buffer/reg_block_high_reg_0_2/ENARDEN (net: camera_sd_system_i/detection_overlay/inst/color_buffer/reg_block_high_reg_0_0_i_1_n_0) which is driven by a register (camera_sd_system_i/video_clock/inst/released_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_sd_system_i/detection_overlay/inst/color_buffer/reg_block_low_reg_0_0 has an input control pin camera_sd_system_i/detection_overlay/inst/color_buffer/reg_block_low_reg_0_0/WEA[0] (net: camera_sd_system_i/detection_overlay/inst/color_buffer/p_0_in11_out) which is driven by a register (camera_sd_system_i/video_clock/inst/released_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#6 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_sd_system_i/detection_overlay/inst/color_buffer/reg_block_low_reg_0_1 has an input control pin camera_sd_system_i/detection_overlay/inst/color_buffer/reg_block_low_reg_0_1/WEA[0] (net: camera_sd_system_i/detection_overlay/inst/color_buffer/p_0_in11_out) which is driven by a register (camera_sd_system_i/video_clock/inst/released_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#7 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_sd_system_i/detection_overlay/inst/color_buffer/reg_block_low_reg_0_2 has an input control pin camera_sd_system_i/detection_overlay/inst/color_buffer/reg_block_low_reg_0_2/WEA[0] (net: camera_sd_system_i/detection_overlay/inst/color_buffer/p_0_in11_out) which is driven by a register (camera_sd_system_i/video_clock/inst/released_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#8 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_sd_system_i/detection_overlay/inst/color_buffer/reg_block_low_reg_1_0 has an input control pin camera_sd_system_i/detection_overlay/inst/color_buffer/reg_block_low_reg_1_0/ENARDEN (net: camera_sd_system_i/detection_overlay/inst/color_buffer/p_0_in11_out) which is driven by a register (camera_sd_system_i/video_clock/inst/released_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#9 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_sd_system_i/detection_overlay/inst/color_buffer/reg_block_low_reg_1_1 has an input control pin camera_sd_system_i/detection_overlay/inst/color_buffer/reg_block_low_reg_1_1/ENARDEN (net: camera_sd_system_i/detection_overlay/inst/color_buffer/p_0_in11_out) which is driven by a register (camera_sd_system_i/video_clock/inst/released_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#10 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_sd_system_i/detection_overlay/inst/color_buffer/reg_block_low_reg_1_2 has an input control pin camera_sd_system_i/detection_overlay/inst/color_buffer/reg_block_low_reg_1_2/ENARDEN (net: camera_sd_system_i/detection_overlay/inst/color_buffer/p_0_in11_out) which is driven by a register (camera_sd_system_i/video_clock/inst/released_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#11 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_sd_system_i/preview_ddr/inst/capture_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin camera_sd_system_i/preview_ddr/inst/capture_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/ENARDEN (net: camera_sd_system_i/preview_ddr/inst/capture_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (camera_sd_system_i/preview_ddr/inst/reg_cam_reset_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#12 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_sd_system_i/preview_ddr/inst/capture_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1 has an input control pin camera_sd_system_i/preview_ddr/inst/capture_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1/ENARDEN (net: camera_sd_system_i/preview_ddr/inst/capture_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (camera_sd_system_i/preview_ddr/inst/reg_cam_reset_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#1 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_sd_system_i/dashboard/inst/dashboard_text_bram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1 has an input control pin camera_sd_system_i/dashboard/inst/dashboard_text_bram/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1/RSTRAMB (net: camera_sd_system_i/dashboard/inst/dashboard_text_bram/xpm_memory_base_inst/lopt) which is driven by a register (camera_sd_system_i/video_clock/inst/released_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#2 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep has an input control pin camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep/ADDRARDADDR[10] (net: camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep_i_2_n_0) which is driven by a register (camera_sd_system_i/video_clock/inst/released_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#3 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep has an input control pin camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep/ADDRARDADDR[4] (net: camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep_i_8_n_0) which is driven by a register (camera_sd_system_i/video_clock/inst/released_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#4 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep has an input control pin camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep/ADDRARDADDR[5] (net: camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep_i_7_n_0) which is driven by a register (camera_sd_system_i/video_clock/inst/released_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#5 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep has an input control pin camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep/ADDRARDADDR[6] (net: camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep_i_6_n_0) which is driven by a register (camera_sd_system_i/video_clock/inst/released_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#6 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep has an input control pin camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep/ADDRARDADDR[7] (net: camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep_i_5_n_0) which is driven by a register (camera_sd_system_i/video_clock/inst/released_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#7 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep has an input control pin camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep/ADDRARDADDR[8] (net: camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep_i_4_n_0) which is driven by a register (camera_sd_system_i/video_clock/inst/released_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#8 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep has an input control pin camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep/ADDRARDADDR[9] (net: camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep_i_3_n_0) which is driven by a register (camera_sd_system_i/video_clock/inst/released_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#9 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep has an input control pin camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep/ADDRBWRADDR[10] (net: camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep_i_2_n_0) which is driven by a register (camera_sd_system_i/video_clock/inst/released_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#10 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep has an input control pin camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep/ADDRBWRADDR[4] (net: camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep_i_8_n_0) which is driven by a register (camera_sd_system_i/video_clock/inst/released_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#11 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep has an input control pin camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep/ADDRBWRADDR[5] (net: camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep_i_7_n_0) which is driven by a register (camera_sd_system_i/video_clock/inst/released_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#12 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep has an input control pin camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep/ADDRBWRADDR[6] (net: camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep_i_6_n_0) which is driven by a register (camera_sd_system_i/video_clock/inst/released_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#13 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep has an input control pin camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep/ADDRBWRADDR[7] (net: camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep_i_5_n_0) which is driven by a register (camera_sd_system_i/video_clock/inst/released_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#14 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep has an input control pin camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep/ADDRBWRADDR[8] (net: camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep_i_4_n_0) which is driven by a register (camera_sd_system_i/video_clock/inst/released_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#15 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep has an input control pin camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep/ADDRBWRADDR[9] (net: camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep_i_3_n_0) which is driven by a register (camera_sd_system_i/video_clock/inst/released_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#16 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep has an input control pin camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep/ENARDEN (net: camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep_i_1_n_0) which is driven by a register (camera_sd_system_i/video_clock/inst/released_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#17 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep has an input control pin camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep/ENBWREN (net: camera_sd_system_i/detection_overlay/inst/reg_character_reg_rep_i_1_n_0) which is driven by a register (camera_sd_system_i/video_clock/inst/released_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#18 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_sd_system_i/preview_ddr/inst/preview_filter/reg_partial_reg has an input control pin camera_sd_system_i/preview_ddr/inst/preview_filter/reg_partial_reg/ENARDEN (net: camera_sd_system_i/preview_ddr/inst/preview_filter/reg_partial_read0__8) which is driven by a register (camera_sd_system_i/preview_ddr/inst/reg_cam_reset_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#19 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_sd_system_i/preview_ddr/inst/preview_filter/reg_partial_reg has an input control pin camera_sd_system_i/preview_ddr/inst/preview_filter/reg_partial_reg/ENBWREN (net: camera_sd_system_i/preview_ddr/inst/preview_filter/p_11_in) which is driven by a register (camera_sd_system_i/preview_ddr/inst/reg_cam_reset_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-165#1 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (camera_sd_system_i/screen_dma/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#1 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (camera_sd_system_i/gray_dma/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#2 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (camera_sd_system_i/screen_dma/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+

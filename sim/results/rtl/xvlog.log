@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "${WORKSPACE}/src/fpga/rtl/preview_area_average.v" into library work
+INFO: [VRFC 10-311] analyzing module preview_area_average
+INFO: [VRFC 10-2263] Analyzing Verilog file "${WORKSPACE}/src/fpga/rtl/ddr_gray_reader.v" into library work
+INFO: [VRFC 10-311] analyzing module ddr_gray_reader
+INFO: [VRFC 10-2263] Analyzing Verilog file "${WORKSPACE}/src/fpga/rtl/ddr_preview.v" into library work
+INFO: [VRFC 10-311] analyzing module ddr_preview
+INFO: [VRFC 10-2263] Analyzing Verilog file "${WORKSPACE}/sim/tests/tb_pynq_memory.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_pynq_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "${AMD_ROOT}/data/verilog/src/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl

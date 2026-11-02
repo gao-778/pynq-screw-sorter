@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "files": {
+    "baremetal-to-pynq/agents/openai.yaml": "b096a8eab1edb76e86a8ea414d241a37442fb094b35a1bd95c6ee73ad4dcfec6",
+    "baremetal-to-pynq/references/adapter_contract.md": "7979a84ebaa42694d54a32aa282a6a2f340a7fa0092955a62b5822c759114a0f",
+    "baremetal-to-pynq/SKILL.md": "f764afc66a5888857a64096cb0580826ddd8e5f2c8806adba3408c7afb0c5189",
+    "examples/screw_sort_case.md": "bcad6b96b34a7bd37d51ace985bb0ce8feea6b826af146c900670166c36f3ffb",
+    "fpga-evidence-report/agents/openai.yaml": "3f04b5abc22dc3d62546c2aa19fd6db42b60d5225c790106ad6e469990b216cf",
+    "fpga-evidence-report/SKILL.md": "25a0fecde4b7d609869887bb3e41c7e8b1d52fe58ff266f393e081536a918752",
+    "fpga-system-partition/agents/openai.yaml": "5c3af5035549e4e680a21b318ceec218b108d0ce4af2d7d5ec8d9ff6e60acace",
+    "fpga-system-partition/SKILL.md": "c87b6a6f29fedf671331176e44276d31538abd9c6a838082c01fdb77bb3b107a",
+    "pynq-dma-lifecycle/agents/openai.yaml": "4dc183b8bb3ba16e08bc4458053d45e3dd926fedffe487418b59905234e1e2ca",
+    "pynq-dma-lifecycle/references/device_contracts.md": "8a097fecaf282c0b925064ea096010dce6d04223bd6fdb323f3e90a1df425920",
+    "pynq-dma-lifecycle/SKILL.md": "0991192acc91c68705e24b2dec3b0cea82edc6ae3e74bdb5cd286458d51361f7",
+    "pynq-overlay-contract/agents/openai.yaml": "82f8a1062362bc50bd830fae1d61cfb8bb640d7757ee7a94eac6876e8f1de214",
+    "pynq-overlay-contract/assets/contract.example.json": "df81dc02df4660e54169bd9360fb7df7799420ad97fedbe67055364a4bd04c5f",
+    "pynq-overlay-contract/scripts/check_contract.py": "9059af2c7ba392c804166ad5ae8e6534f5b89ee5b606fc6e5967497651eb2d8c",
+    "pynq-overlay-contract/SKILL.md": "557ec1603f6b7fb9137910be1b03f2037c12ce897a7a8e31abdc3ab5ef65899e",
+    "README.md": "d4ba929d930dee4207a3943f7ba9e0e9430452b54fcdc0ca3cf332fac4f6ed2d",
+    "servo-bus-diagnostics/agents/openai.yaml": "f8f3529068bbe5531bb823394bf47e05aba27be2f16c8db0d93e42ad9f7478a6",
+    "servo-bus-diagnostics/SKILL.md": "2876894bbc48d7234818cb8bf8c6812951d6793999b72ea39a9e84884c9fd4ef",
+    "vision-motion-gating/agents/openai.yaml": "b80b3c6b2d97485bcd8ffb5a43084b533685dff1a6decb8998fe4e4efce9b9b3",
+    "vision-motion-gating/SKILL.md": "c1e011fea0f1d254bbbcecd6190495eecaaa94a8ba6a0d84ec3360c77f921471"
+  }
+}

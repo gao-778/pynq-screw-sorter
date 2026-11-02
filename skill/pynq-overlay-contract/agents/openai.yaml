@@ -1,0 +1,4 @@
+interface:
+  display_name: "PYNQ Overlay 接口契约"
+  short_description: "读取硬件元数据并核对寄存器区域、版本与能力，组织可移植的加载流程。"
+  default_prompt: "使用 $pynq-overlay-contract，结合提供的工程资料完成分析并给出可复用产物与适用边界。"

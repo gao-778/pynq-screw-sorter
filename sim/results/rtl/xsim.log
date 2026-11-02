@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Mon Nov  2 23:36:38 2026
+# Process ID         : 36488
+# Current directory  : ${WORKSPACE}/sim/output/rtl
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/tb_pynq_memory/xsim_script.tcl}
+# Log file           : ${WORKSPACE}/sim/output/rtl/xsim.log
+# Journal file       : ${WORKSPACE}/sim/output/rtl\xsim.jou
+# Running On         : LAPTOP-R1EJQOBE
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 7840H with Radeon 780M Graphics
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16312 MB
+# Swap memory        : 10749 MB
+# Total Virtual      : 27061 MB
+# Available Virtual  : 3382 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_pynq_memory/xsim_script.tcl
+# xsim {tb_pynq_memory} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS PYNQ_MEMORY: relocated gray/preview bank addresses; stalled AR/AW and read/write/B shutdown drain; no restart after run=0
+$finish called at time : 59310 ns : File "${WORKSPACE}/sim/tests/tb_pynq_memory.v" Line 80
+exit
+INFO: [Common 17-206] Exiting xsim at Mon Nov  2 23:36:41 2026...

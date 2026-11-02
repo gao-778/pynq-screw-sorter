@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "board": "PYNQ-Z2",
+  "part": "xc7z020clg400-1",
+  "address_bits": 32,
+  "abi": "0x50594d32",
+  "hardware_id": "0x4d433138",
+  "bit_sha256": "66a42b2a617869534d30cd0ef2785589374769e2f263745c7f7facaea404ba0c",
+  "hwh_sha256": "02c051293da2af4be7ffcc5c1e50ffd749bd5185a149487a7c3b0b30a8c133fb",
+  "regions": [
+    {
+      "name": "control",
+      "base": "0x41200000",
+      "bytes": 65536
+    },
+    {
+      "name": "recognition",
+      "base": "0x42000000",
+      "bytes": 65536
+    },
+    {
+      "name": "dashboard",
+      "base": "0x43000000",
+      "bytes": 65536
+    },
+    {
+      "name": "gray_dma",
+      "base": "0x40400000",
+      "bytes": 65536
+    },
+    {
+      "name": "screen_dma",
+      "base": "0x40410000",
+      "bytes": 65536
+    },
+    {
+      "name": "arm_uart",
+      "base": "0x43c00000",
+      "bytes": 65536
+    },
+    {
+      "name": "arm_gpio",
+      "base": "0x41210000",
+      "bytes": 65536
+    }
+  ],
+  "buffer_bytes": [
+    4194304,
+    786432,
+    3686400
+  ],
+  "dma_address_limit": "0x20000000"
+}

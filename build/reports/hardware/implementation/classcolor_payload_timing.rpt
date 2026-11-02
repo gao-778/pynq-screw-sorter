@@ -1,0 +1,773 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Sun Nov  1 21:07:22 2026
+| Host         : LAPTOP-R1EJQOBE running 64-bit major release  (build 9200)
+| Command      : report_timing -from [get_cells -quiet -hier -filter {IS_SEQUENTIAL == 1} -regexp .*dashboard/inst/reg_color_stage_reg.*] -to [get_cells -quiet -hier -filter {IS_SEQUENTIAL == 1} -regexp .*dashboard/inst/reg_color_meta_reg.*] -max_paths 27 -nworst 1 -file classcolor_payload_timing.rpt
+| Design       : camera_sd_system_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Physopt postRoute
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             12.026ns  (required time - arrival time)
+  Source:                 camera_sd_system_i/dashboard/inst/reg_color_stage_reg[14]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            camera_sd_system_i/dashboard/inst/reg_color_meta_reg[14]/D
+                            (rising edge-triggered cell FDRE clocked by pixel_raw  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             pixel_raw
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            13.468ns  (MaxDelay Path 13.468ns)
+  Data Path Delay:        1.349ns  (logic 0.456ns (33.796%)  route 0.893ns (66.204%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 13.468ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X91Y69                                      0.000     0.000 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[14]/C
+    SLICE_X91Y69         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[14]/Q
+                         net (fo=2, routed)           0.893     1.349    camera_sd_system_i/dashboard/inst/reg_color_stage[14]
+    SLICE_X95Y69         FDRE                                         r  camera_sd_system_i/dashboard/inst/reg_color_meta_reg[14]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   13.468    13.468    <hidden>
+    SLICE_X95Y69         FDRE (Setup_fdre_C_D)       -0.093    13.375    camera_sd_system_i/dashboard/inst/reg_color_meta_reg[14]
+  -------------------------------------------------------------------
+                         required time                         13.375    <hidden>
+                         arrival time                          -1.349    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 12.026    <hidden>
+
+Slack (MET) :             12.079ns  (required time - arrival time)
+  Source:                 camera_sd_system_i/dashboard/inst/reg_color_stage_reg[19]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            camera_sd_system_i/dashboard/inst/reg_color_meta_reg[19]/D
+                            (rising edge-triggered cell FDRE clocked by pixel_raw  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             pixel_raw
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            13.468ns  (MaxDelay Path 13.468ns)
+  Data Path Delay:        1.342ns  (logic 0.456ns (33.989%)  route 0.886ns (66.011%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 13.468ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X91Y66                                      0.000     0.000 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[19]/C
+    SLICE_X91Y66         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[19]/Q
+                         net (fo=2, routed)           0.886     1.342    camera_sd_system_i/dashboard/inst/reg_color_stage[19]
+    SLICE_X90Y66         FDRE                                         r  camera_sd_system_i/dashboard/inst/reg_color_meta_reg[19]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   13.468    13.468    <hidden>
+    SLICE_X90Y66         FDRE (Setup_fdre_C_D)       -0.047    13.421    camera_sd_system_i/dashboard/inst/reg_color_meta_reg[19]
+  -------------------------------------------------------------------
+                         required time                         13.421    <hidden>
+                         arrival time                          -1.342    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 12.079    <hidden>
+
+Slack (MET) :             12.134ns  (required time - arrival time)
+  Source:                 camera_sd_system_i/dashboard/inst/reg_color_stage_reg[10]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            camera_sd_system_i/dashboard/inst/reg_color_meta_reg[10]/D
+                            (rising edge-triggered cell FDRE clocked by pixel_raw  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             pixel_raw
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            13.468ns  (MaxDelay Path 13.468ns)
+  Data Path Delay:        1.239ns  (logic 0.456ns (36.818%)  route 0.783ns (63.182%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 13.468ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X88Y69                                      0.000     0.000 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[10]/C
+    SLICE_X88Y69         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[10]/Q
+                         net (fo=2, routed)           0.783     1.239    camera_sd_system_i/dashboard/inst/reg_color_stage[10]
+    SLICE_X95Y69         FDRE                                         r  camera_sd_system_i/dashboard/inst/reg_color_meta_reg[10]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   13.468    13.468    <hidden>
+    SLICE_X95Y69         FDRE (Setup_fdre_C_D)       -0.095    13.373    camera_sd_system_i/dashboard/inst/reg_color_meta_reg[10]
+  -------------------------------------------------------------------
+                         required time                         13.373    <hidden>
+                         arrival time                          -1.239    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 12.134    <hidden>
+
+Slack (MET) :             12.144ns  (required time - arrival time)
+  Source:                 camera_sd_system_i/dashboard/inst/reg_color_stage_reg[16]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            camera_sd_system_i/dashboard/inst/reg_color_meta_reg[16]/D
+                            (rising edge-triggered cell FDRE clocked by pixel_raw  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             pixel_raw
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            13.468ns  (MaxDelay Path 13.468ns)
+  Data Path Delay:        1.229ns  (logic 0.456ns (37.092%)  route 0.773ns (62.908%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 13.468ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X88Y67                                      0.000     0.000 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[16]/C
+    SLICE_X88Y67         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[16]/Q
+                         net (fo=2, routed)           0.773     1.229    camera_sd_system_i/dashboard/inst/reg_color_stage[16]
+    SLICE_X89Y68         FDRE                                         r  camera_sd_system_i/dashboard/inst/reg_color_meta_reg[16]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   13.468    13.468    <hidden>
+    SLICE_X89Y68         FDRE (Setup_fdre_C_D)       -0.095    13.373    camera_sd_system_i/dashboard/inst/reg_color_meta_reg[16]
+  -------------------------------------------------------------------
+                         required time                         13.373    <hidden>
+                         arrival time                          -1.229    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 12.144    <hidden>
+
+Slack (MET) :             12.144ns  (required time - arrival time)
+  Source:                 camera_sd_system_i/dashboard/inst/reg_color_stage_reg[21]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            camera_sd_system_i/dashboard/inst/reg_color_meta_reg[21]/D
+                            (rising edge-triggered cell FDRE clocked by pixel_raw  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             pixel_raw
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            13.468ns  (MaxDelay Path 13.468ns)
+  Data Path Delay:        1.277ns  (logic 0.518ns (40.570%)  route 0.759ns (59.430%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 13.468ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X90Y68                                      0.000     0.000 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[21]/C
+    SLICE_X90Y68         FDRE (Prop_fdre_C_Q)         0.518     0.518 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[21]/Q
+                         net (fo=2, routed)           0.759     1.277    camera_sd_system_i/dashboard/inst/reg_color_stage[21]
+    SLICE_X96Y69         FDRE                                         r  camera_sd_system_i/dashboard/inst/reg_color_meta_reg[21]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   13.468    13.468    <hidden>
+    SLICE_X96Y69         FDRE (Setup_fdre_C_D)       -0.047    13.421    camera_sd_system_i/dashboard/inst/reg_color_meta_reg[21]
+  -------------------------------------------------------------------
+                         required time                         13.421    <hidden>
+                         arrival time                          -1.277    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 12.144    <hidden>
+
+Slack (MET) :             12.152ns  (required time - arrival time)
+  Source:                 camera_sd_system_i/dashboard/inst/reg_color_stage_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            camera_sd_system_i/dashboard/inst/reg_color_meta_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by pixel_raw  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             pixel_raw
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            13.468ns  (MaxDelay Path 13.468ns)
+  Data Path Delay:        1.271ns  (logic 0.456ns (35.878%)  route 0.815ns (64.122%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 13.468ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X89Y66                                      0.000     0.000 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[2]/C
+    SLICE_X89Y66         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[2]/Q
+                         net (fo=2, routed)           0.815     1.271    camera_sd_system_i/dashboard/inst/reg_color_stage[2]
+    SLICE_X92Y69         FDRE                                         r  camera_sd_system_i/dashboard/inst/reg_color_meta_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   13.468    13.468    <hidden>
+    SLICE_X92Y69         FDRE (Setup_fdre_C_D)       -0.045    13.423    camera_sd_system_i/dashboard/inst/reg_color_meta_reg[2]
+  -------------------------------------------------------------------
+                         required time                         13.423    <hidden>
+                         arrival time                          -1.271    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 12.152    <hidden>
+
+Slack (MET) :             12.178ns  (required time - arrival time)
+  Source:                 camera_sd_system_i/dashboard/inst/reg_color_stage_reg[20]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            camera_sd_system_i/dashboard/inst/reg_color_meta_reg[20]/D
+                            (rising edge-triggered cell FDRE clocked by pixel_raw  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             pixel_raw
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            13.468ns  (MaxDelay Path 13.468ns)
+  Data Path Delay:        1.243ns  (logic 0.456ns (36.679%)  route 0.787ns (63.321%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 13.468ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X91Y69                                      0.000     0.000 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[20]/C
+    SLICE_X91Y69         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[20]/Q
+                         net (fo=2, routed)           0.787     1.243    camera_sd_system_i/dashboard/inst/reg_color_stage[20]
+    SLICE_X92Y69         FDRE                                         r  camera_sd_system_i/dashboard/inst/reg_color_meta_reg[20]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   13.468    13.468    <hidden>
+    SLICE_X92Y69         FDRE (Setup_fdre_C_D)       -0.047    13.421    camera_sd_system_i/dashboard/inst/reg_color_meta_reg[20]
+  -------------------------------------------------------------------
+                         required time                         13.421    <hidden>
+                         arrival time                          -1.243    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 12.178    <hidden>
+
+Slack (MET) :             12.178ns  (required time - arrival time)
+  Source:                 camera_sd_system_i/dashboard/inst/reg_color_stage_reg[18]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            camera_sd_system_i/dashboard/inst/reg_color_meta_reg[18]/D
+                            (rising edge-triggered cell FDRE clocked by pixel_raw  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             pixel_raw
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            13.468ns  (MaxDelay Path 13.468ns)
+  Data Path Delay:        1.247ns  (logic 0.456ns (36.572%)  route 0.791ns (63.428%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 13.468ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X88Y67                                      0.000     0.000 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[18]/C
+    SLICE_X88Y67         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[18]/Q
+                         net (fo=2, routed)           0.791     1.247    camera_sd_system_i/dashboard/inst/reg_color_stage[18]
+    SLICE_X86Y72         FDRE                                         r  camera_sd_system_i/dashboard/inst/reg_color_meta_reg[18]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   13.468    13.468    <hidden>
+    SLICE_X86Y72         FDRE (Setup_fdre_C_D)       -0.043    13.425    camera_sd_system_i/dashboard/inst/reg_color_meta_reg[18]
+  -------------------------------------------------------------------
+                         required time                         13.425    <hidden>
+                         arrival time                          -1.247    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 12.178    <hidden>
+
+Slack (MET) :             12.206ns  (required time - arrival time)
+  Source:                 camera_sd_system_i/dashboard/inst/reg_color_stage_reg[13]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            camera_sd_system_i/dashboard/inst/reg_color_meta_reg[13]/D
+                            (rising edge-triggered cell FDRE clocked by pixel_raw  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             pixel_raw
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            13.468ns  (MaxDelay Path 13.468ns)
+  Data Path Delay:        1.219ns  (logic 0.456ns (37.416%)  route 0.763ns (62.584%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 13.468ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X88Y69                                      0.000     0.000 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[13]/C
+    SLICE_X88Y69         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[13]/Q
+                         net (fo=2, routed)           0.763     1.219    camera_sd_system_i/dashboard/inst/reg_color_stage[13]
+    SLICE_X98Y70         FDRE                                         r  camera_sd_system_i/dashboard/inst/reg_color_meta_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   13.468    13.468    <hidden>
+    SLICE_X98Y70         FDRE (Setup_fdre_C_D)       -0.043    13.425    camera_sd_system_i/dashboard/inst/reg_color_meta_reg[13]
+  -------------------------------------------------------------------
+                         required time                         13.425    <hidden>
+                         arrival time                          -1.219    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 12.206    <hidden>
+
+Slack (MET) :             12.220ns  (required time - arrival time)
+  Source:                 camera_sd_system_i/dashboard/inst/reg_color_stage_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            camera_sd_system_i/dashboard/inst/reg_color_meta_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by pixel_raw  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             pixel_raw
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            13.468ns  (MaxDelay Path 13.468ns)
+  Data Path Delay:        1.153ns  (logic 0.518ns (44.911%)  route 0.635ns (55.089%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 13.468ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X96Y67                                      0.000     0.000 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[1]/C
+    SLICE_X96Y67         FDRE (Prop_fdre_C_Q)         0.518     0.518 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[1]/Q
+                         net (fo=2, routed)           0.635     1.153    camera_sd_system_i/dashboard/inst/reg_color_stage[1]
+    SLICE_X97Y69         FDRE                                         r  camera_sd_system_i/dashboard/inst/reg_color_meta_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   13.468    13.468    <hidden>
+    SLICE_X97Y69         FDRE (Setup_fdre_C_D)       -0.095    13.373    camera_sd_system_i/dashboard/inst/reg_color_meta_reg[1]
+  -------------------------------------------------------------------
+                         required time                         13.373    <hidden>
+                         arrival time                          -1.153    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 12.220    <hidden>
+
+Slack (MET) :             12.223ns  (required time - arrival time)
+  Source:                 camera_sd_system_i/dashboard/inst/reg_color_stage_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            camera_sd_system_i/dashboard/inst/reg_color_meta_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by pixel_raw  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             pixel_raw
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            13.468ns  (MaxDelay Path 13.468ns)
+  Data Path Delay:        1.198ns  (logic 0.456ns (38.064%)  route 0.742ns (61.936%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 13.468ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X99Y66                                      0.000     0.000 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[0]/C
+    SLICE_X99Y66         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[0]/Q
+                         net (fo=2, routed)           0.742     1.198    camera_sd_system_i/dashboard/inst/reg_color_stage[0]
+    SLICE_X98Y70         FDRE                                         r  camera_sd_system_i/dashboard/inst/reg_color_meta_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   13.468    13.468    <hidden>
+    SLICE_X98Y70         FDRE (Setup_fdre_C_D)       -0.047    13.421    camera_sd_system_i/dashboard/inst/reg_color_meta_reg[0]
+  -------------------------------------------------------------------
+                         required time                         13.421    <hidden>
+                         arrival time                          -1.198    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 12.223    <hidden>
+
+Slack (MET) :             12.224ns  (required time - arrival time)
+  Source:                 camera_sd_system_i/dashboard/inst/reg_color_stage_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            camera_sd_system_i/dashboard/inst/reg_color_meta_reg[5]/D
+                            (rising edge-triggered cell FDRE clocked by pixel_raw  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             pixel_raw
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            13.468ns  (MaxDelay Path 13.468ns)
+  Data Path Delay:        1.149ns  (logic 0.456ns (39.676%)  route 0.693ns (60.324%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 13.468ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X95Y66                                      0.000     0.000 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[5]/C
+    SLICE_X95Y66         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[5]/Q
+                         net (fo=2, routed)           0.693     1.149    camera_sd_system_i/dashboard/inst/reg_color_stage[5]
+    SLICE_X95Y71         FDRE                                         r  camera_sd_system_i/dashboard/inst/reg_color_meta_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   13.468    13.468    <hidden>
+    SLICE_X95Y71         FDRE (Setup_fdre_C_D)       -0.095    13.373    camera_sd_system_i/dashboard/inst/reg_color_meta_reg[5]
+  -------------------------------------------------------------------
+                         required time                         13.373    <hidden>
+                         arrival time                          -1.149    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 12.224    <hidden>
+
+Slack (MET) :             12.226ns  (required time - arrival time)
+  Source:                 camera_sd_system_i/dashboard/inst/reg_color_stage_reg[25]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            camera_sd_system_i/dashboard/inst/reg_color_meta_reg[25]/D
+                            (rising edge-triggered cell FDRE clocked by pixel_raw  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             pixel_raw
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            13.468ns  (MaxDelay Path 13.468ns)
+  Data Path Delay:        1.025ns  (logic 0.419ns (40.889%)  route 0.606ns (59.111%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 13.468ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X91Y69                                      0.000     0.000 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[25]/C
+    SLICE_X91Y69         FDRE (Prop_fdre_C_Q)         0.419     0.419 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[25]/Q
+                         net (fo=2, routed)           0.606     1.025    camera_sd_system_i/dashboard/inst/reg_color_stage[25]
+    SLICE_X92Y69         FDRE                                         r  camera_sd_system_i/dashboard/inst/reg_color_meta_reg[25]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   13.468    13.468    <hidden>
+    SLICE_X92Y69         FDRE (Setup_fdre_C_D)       -0.217    13.251    camera_sd_system_i/dashboard/inst/reg_color_meta_reg[25]
+  -------------------------------------------------------------------
+                         required time                         13.251    <hidden>
+                         arrival time                          -1.025    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 12.226    <hidden>
+
+Slack (MET) :             12.228ns  (required time - arrival time)
+  Source:                 camera_sd_system_i/dashboard/inst/reg_color_stage_reg[24]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            camera_sd_system_i/dashboard/inst/reg_color_meta_reg[24]/D
+                            (rising edge-triggered cell FDRE clocked by pixel_raw  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             pixel_raw
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            13.468ns  (MaxDelay Path 13.468ns)
+  Data Path Delay:        1.197ns  (logic 0.456ns (38.108%)  route 0.741ns (61.892%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 13.468ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X91Y69                                      0.000     0.000 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[24]/C
+    SLICE_X91Y69         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[24]/Q
+                         net (fo=2, routed)           0.741     1.197    camera_sd_system_i/dashboard/inst/reg_color_stage[24]
+    SLICE_X92Y69         FDRE                                         r  camera_sd_system_i/dashboard/inst/reg_color_meta_reg[24]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   13.468    13.468    <hidden>
+    SLICE_X92Y69         FDRE (Setup_fdre_C_D)       -0.043    13.425    camera_sd_system_i/dashboard/inst/reg_color_meta_reg[24]
+  -------------------------------------------------------------------
+                         required time                         13.425    <hidden>
+                         arrival time                          -1.197    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 12.228    <hidden>
+
+Slack (MET) :             12.229ns  (required time - arrival time)
+  Source:                 camera_sd_system_i/dashboard/inst/reg_color_stage_reg[11]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            camera_sd_system_i/dashboard/inst/reg_color_meta_reg[11]/D
+                            (rising edge-triggered cell FDRE clocked by pixel_raw  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             pixel_raw
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            13.468ns  (MaxDelay Path 13.468ns)
+  Data Path Delay:        1.144ns  (logic 0.456ns (39.861%)  route 0.688ns (60.139%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 13.468ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X88Y69                                      0.000     0.000 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[11]/C
+    SLICE_X88Y69         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[11]/Q
+                         net (fo=2, routed)           0.688     1.144    camera_sd_system_i/dashboard/inst/reg_color_stage[11]
+    SLICE_X93Y70         FDRE                                         r  camera_sd_system_i/dashboard/inst/reg_color_meta_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   13.468    13.468    <hidden>
+    SLICE_X93Y70         FDRE (Setup_fdre_C_D)       -0.095    13.373    camera_sd_system_i/dashboard/inst/reg_color_meta_reg[11]
+  -------------------------------------------------------------------
+                         required time                         13.373    <hidden>
+                         arrival time                          -1.144    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 12.229    <hidden>
+
+Slack (MET) :             12.261ns  (required time - arrival time)
+  Source:                 camera_sd_system_i/dashboard/inst/reg_color_stage_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            camera_sd_system_i/dashboard/inst/reg_color_meta_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by pixel_raw  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             pixel_raw
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            13.468ns  (MaxDelay Path 13.468ns)
+  Data Path Delay:        1.164ns  (logic 0.518ns (44.492%)  route 0.646ns (55.508%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 13.468ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X96Y67                                      0.000     0.000 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[4]/C
+    SLICE_X96Y67         FDRE (Prop_fdre_C_Q)         0.518     0.518 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[4]/Q
+                         net (fo=2, routed)           0.646     1.164    camera_sd_system_i/dashboard/inst/reg_color_stage[4]
+    SLICE_X96Y69         FDRE                                         r  camera_sd_system_i/dashboard/inst/reg_color_meta_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   13.468    13.468    <hidden>
+    SLICE_X96Y69         FDRE (Setup_fdre_C_D)       -0.043    13.425    camera_sd_system_i/dashboard/inst/reg_color_meta_reg[4]
+  -------------------------------------------------------------------
+                         required time                         13.425    <hidden>
+                         arrival time                          -1.164    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 12.261    <hidden>
+
+Slack (MET) :             12.270ns  (required time - arrival time)
+  Source:                 camera_sd_system_i/dashboard/inst/reg_color_stage_reg[17]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            camera_sd_system_i/dashboard/inst/reg_color_meta_reg[17]/D
+                            (rising edge-triggered cell FDRE clocked by pixel_raw  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             pixel_raw
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            13.468ns  (MaxDelay Path 13.468ns)
+  Data Path Delay:        1.103ns  (logic 0.518ns (46.958%)  route 0.585ns (53.042%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 13.468ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X90Y67                                      0.000     0.000 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[17]/C
+    SLICE_X90Y67         FDRE (Prop_fdre_C_Q)         0.518     0.518 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[17]/Q
+                         net (fo=2, routed)           0.585     1.103    camera_sd_system_i/dashboard/inst/reg_color_stage[17]
+    SLICE_X91Y67         FDRE                                         r  camera_sd_system_i/dashboard/inst/reg_color_meta_reg[17]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   13.468    13.468    <hidden>
+    SLICE_X91Y67         FDRE (Setup_fdre_C_D)       -0.095    13.373    camera_sd_system_i/dashboard/inst/reg_color_meta_reg[17]
+  -------------------------------------------------------------------
+                         required time                         13.373    <hidden>
+                         arrival time                          -1.103    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 12.270    <hidden>
+
+Slack (MET) :             12.271ns  (required time - arrival time)
+  Source:                 camera_sd_system_i/dashboard/inst/reg_color_stage_reg[9]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            camera_sd_system_i/dashboard/inst/reg_color_meta_reg[9]/D
+                            (rising edge-triggered cell FDRE clocked by pixel_raw  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             pixel_raw
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            13.468ns  (MaxDelay Path 13.468ns)
+  Data Path Delay:        1.104ns  (logic 0.518ns (46.907%)  route 0.586ns (53.093%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 13.468ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X90Y68                                      0.000     0.000 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[9]/C
+    SLICE_X90Y68         FDRE (Prop_fdre_C_Q)         0.518     0.518 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[9]/Q
+                         net (fo=2, routed)           0.586     1.104    camera_sd_system_i/dashboard/inst/reg_color_stage[9]
+    SLICE_X91Y70         FDRE                                         r  camera_sd_system_i/dashboard/inst/reg_color_meta_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   13.468    13.468    <hidden>
+    SLICE_X91Y70         FDRE (Setup_fdre_C_D)       -0.093    13.375    camera_sd_system_i/dashboard/inst/reg_color_meta_reg[9]
+  -------------------------------------------------------------------
+                         required time                         13.375    <hidden>
+                         arrival time                          -1.104    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 12.271    <hidden>
+
+Slack (MET) :             12.282ns  (required time - arrival time)
+  Source:                 camera_sd_system_i/dashboard/inst/reg_color_stage_reg[15]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            camera_sd_system_i/dashboard/inst/reg_color_meta_reg[15]/D
+                            (rising edge-triggered cell FDRE clocked by pixel_raw  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             pixel_raw
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            13.468ns  (MaxDelay Path 13.468ns)
+  Data Path Delay:        1.143ns  (logic 0.518ns (45.303%)  route 0.625ns (54.697%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 13.468ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X90Y67                                      0.000     0.000 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[15]/C
+    SLICE_X90Y67         FDRE (Prop_fdre_C_Q)         0.518     0.518 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[15]/Q
+                         net (fo=2, routed)           0.625     1.143    camera_sd_system_i/dashboard/inst/reg_color_stage[15]
+    SLICE_X94Y68         FDRE                                         r  camera_sd_system_i/dashboard/inst/reg_color_meta_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   13.468    13.468    <hidden>
+    SLICE_X94Y68         FDRE (Setup_fdre_C_D)       -0.043    13.425    camera_sd_system_i/dashboard/inst/reg_color_meta_reg[15]
+  -------------------------------------------------------------------
+                         required time                         13.425    <hidden>
+                         arrival time                          -1.143    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 12.282    <hidden>
+
+Slack (MET) :             12.282ns  (required time - arrival time)
+  Source:                 camera_sd_system_i/dashboard/inst/reg_color_stage_reg[22]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            camera_sd_system_i/dashboard/inst/reg_color_meta_reg[22]/D
+                            (rising edge-triggered cell FDRE clocked by pixel_raw  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             pixel_raw
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            13.468ns  (MaxDelay Path 13.468ns)
+  Data Path Delay:        1.091ns  (logic 0.518ns (47.475%)  route 0.573ns (52.525%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 13.468ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X90Y68                                      0.000     0.000 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[22]/C
+    SLICE_X90Y68         FDRE (Prop_fdre_C_Q)         0.518     0.518 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[22]/Q
+                         net (fo=2, routed)           0.573     1.091    camera_sd_system_i/dashboard/inst/reg_color_stage[22]
+    SLICE_X91Y70         FDRE                                         r  camera_sd_system_i/dashboard/inst/reg_color_meta_reg[22]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   13.468    13.468    <hidden>
+    SLICE_X91Y70         FDRE (Setup_fdre_C_D)       -0.095    13.373    camera_sd_system_i/dashboard/inst/reg_color_meta_reg[22]
+  -------------------------------------------------------------------
+                         required time                         13.373    <hidden>
+                         arrival time                          -1.091    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 12.282    <hidden>
+
+Slack (MET) :             12.288ns  (required time - arrival time)
+  Source:                 camera_sd_system_i/dashboard/inst/reg_color_stage_reg[8]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            camera_sd_system_i/dashboard/inst/reg_color_meta_reg[8]/D
+                            (rising edge-triggered cell FDRE clocked by pixel_raw  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             pixel_raw
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            13.468ns  (MaxDelay Path 13.468ns)
+  Data Path Delay:        1.088ns  (logic 0.456ns (41.905%)  route 0.632ns (58.095%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 13.468ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X95Y66                                      0.000     0.000 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[8]/C
+    SLICE_X95Y66         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[8]/Q
+                         net (fo=2, routed)           0.632     1.088    camera_sd_system_i/dashboard/inst/reg_color_stage[8]
+    SLICE_X95Y69         FDRE                                         r  camera_sd_system_i/dashboard/inst/reg_color_meta_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   13.468    13.468    <hidden>
+    SLICE_X95Y69         FDRE (Setup_fdre_C_D)       -0.092    13.376    camera_sd_system_i/dashboard/inst/reg_color_meta_reg[8]
+  -------------------------------------------------------------------
+                         required time                         13.376    <hidden>
+                         arrival time                          -1.088    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 12.288    <hidden>
+
+Slack (MET) :             12.291ns  (required time - arrival time)
+  Source:                 camera_sd_system_i/dashboard/inst/reg_color_stage_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            camera_sd_system_i/dashboard/inst/reg_color_meta_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by pixel_raw  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             pixel_raw
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            13.468ns  (MaxDelay Path 13.468ns)
+  Data Path Delay:        1.084ns  (logic 0.456ns (42.069%)  route 0.628ns (57.931%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 13.468ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X99Y66                                      0.000     0.000 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[6]/C
+    SLICE_X99Y66         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[6]/Q
+                         net (fo=2, routed)           0.628     1.084    camera_sd_system_i/dashboard/inst/reg_color_stage[6]
+    SLICE_X97Y69         FDRE                                         r  camera_sd_system_i/dashboard/inst/reg_color_meta_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   13.468    13.468    <hidden>
+    SLICE_X97Y69         FDRE (Setup_fdre_C_D)       -0.093    13.375    camera_sd_system_i/dashboard/inst/reg_color_meta_reg[6]
+  -------------------------------------------------------------------
+                         required time                         13.375    <hidden>
+                         arrival time                          -1.084    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 12.291    <hidden>
+
+Slack (MET) :             12.312ns  (required time - arrival time)
+  Source:                 camera_sd_system_i/dashboard/inst/reg_color_stage_reg[26]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            camera_sd_system_i/dashboard/inst/reg_color_meta_reg[26]/D
+                            (rising edge-triggered cell FDRE clocked by pixel_raw  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             pixel_raw
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            13.468ns  (MaxDelay Path 13.468ns)
+  Data Path Delay:        0.890ns  (logic 0.419ns (47.102%)  route 0.471ns (52.898%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 13.468ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X91Y69                                      0.000     0.000 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[26]/C
+    SLICE_X91Y69         FDRE (Prop_fdre_C_Q)         0.419     0.419 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[26]/Q
+                         net (fo=2, routed)           0.471     0.890    camera_sd_system_i/dashboard/inst/reg_color_stage[26]
+    SLICE_X95Y69         FDRE                                         r  camera_sd_system_i/dashboard/inst/reg_color_meta_reg[26]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   13.468    13.468    <hidden>
+    SLICE_X95Y69         FDRE (Setup_fdre_C_D)       -0.266    13.202    camera_sd_system_i/dashboard/inst/reg_color_meta_reg[26]
+  -------------------------------------------------------------------
+                         required time                         13.202    <hidden>
+                         arrival time                          -0.890    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 12.312    <hidden>
+
+Slack (MET) :             12.318ns  (required time - arrival time)
+  Source:                 camera_sd_system_i/dashboard/inst/reg_color_stage_reg[23]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            camera_sd_system_i/dashboard/inst/reg_color_meta_reg[23]/D
+                            (rising edge-triggered cell FDRE clocked by pixel_raw  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             pixel_raw
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            13.468ns  (MaxDelay Path 13.468ns)
+  Data Path Delay:        1.057ns  (logic 0.456ns (43.126%)  route 0.601ns (56.874%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 13.468ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X91Y69                                      0.000     0.000 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[23]/C
+    SLICE_X91Y69         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[23]/Q
+                         net (fo=2, routed)           0.601     1.057    camera_sd_system_i/dashboard/inst/reg_color_stage[23]
+    SLICE_X91Y70         FDRE                                         r  camera_sd_system_i/dashboard/inst/reg_color_meta_reg[23]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   13.468    13.468    <hidden>
+    SLICE_X91Y70         FDRE (Setup_fdre_C_D)       -0.093    13.375    camera_sd_system_i/dashboard/inst/reg_color_meta_reg[23]
+  -------------------------------------------------------------------
+                         required time                         13.375    <hidden>
+                         arrival time                          -1.057    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 12.318    <hidden>
+
+Slack (MET) :             12.329ns  (required time - arrival time)
+  Source:                 camera_sd_system_i/dashboard/inst/reg_color_stage_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            camera_sd_system_i/dashboard/inst/reg_color_meta_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by pixel_raw  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             pixel_raw
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            13.468ns  (MaxDelay Path 13.468ns)
+  Data Path Delay:        1.046ns  (logic 0.456ns (43.577%)  route 0.590ns (56.423%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 13.468ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X99Y66                                      0.000     0.000 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[7]/C
+    SLICE_X99Y66         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[7]/Q
+                         net (fo=2, routed)           0.590     1.046    camera_sd_system_i/dashboard/inst/reg_color_stage[7]
+    SLICE_X97Y69         FDRE                                         r  camera_sd_system_i/dashboard/inst/reg_color_meta_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   13.468    13.468    <hidden>
+    SLICE_X97Y69         FDRE (Setup_fdre_C_D)       -0.093    13.375    camera_sd_system_i/dashboard/inst/reg_color_meta_reg[7]
+  -------------------------------------------------------------------
+                         required time                         13.375    <hidden>
+                         arrival time                          -1.046    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 12.329    <hidden>
+
+Slack (MET) :             12.420ns  (required time - arrival time)
+  Source:                 camera_sd_system_i/dashboard/inst/reg_color_stage_reg[12]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            camera_sd_system_i/dashboard/inst/reg_color_meta_reg[12]/D
+                            (rising edge-triggered cell FDRE clocked by pixel_raw  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             pixel_raw
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            13.468ns  (MaxDelay Path 13.468ns)
+  Data Path Delay:        1.001ns  (logic 0.518ns (51.740%)  route 0.483ns (48.260%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 13.468ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X90Y68                                      0.000     0.000 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[12]/C
+    SLICE_X90Y68         FDRE (Prop_fdre_C_Q)         0.518     0.518 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[12]/Q
+                         net (fo=2, routed)           0.483     1.001    camera_sd_system_i/dashboard/inst/reg_color_stage[12]
+    SLICE_X94Y68         FDRE                                         r  camera_sd_system_i/dashboard/inst/reg_color_meta_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   13.468    13.468    <hidden>
+    SLICE_X94Y68         FDRE (Setup_fdre_C_D)       -0.047    13.421    camera_sd_system_i/dashboard/inst/reg_color_meta_reg[12]
+  -------------------------------------------------------------------
+                         required time                         13.421    <hidden>
+                         arrival time                          -1.001    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 12.420    <hidden>
+
+Slack (MET) :             12.460ns  (required time - arrival time)
+  Source:                 camera_sd_system_i/dashboard/inst/reg_color_stage_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            camera_sd_system_i/dashboard/inst/reg_color_meta_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by pixel_raw  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             pixel_raw
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            13.468ns  (MaxDelay Path 13.468ns)
+  Data Path Delay:        0.915ns  (logic 0.456ns (49.817%)  route 0.459ns (50.183%))
+  Logic Levels:           0  
+  Timing Exception:       MaxDelay Path 13.468ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X88Y67                                      0.000     0.000 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[3]/C
+    SLICE_X88Y67         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  camera_sd_system_i/dashboard/inst/reg_color_stage_reg[3]/Q
+                         net (fo=2, routed)           0.459     0.915    camera_sd_system_i/dashboard/inst/reg_color_stage[3]
+    SLICE_X89Y68         FDRE                                         r  camera_sd_system_i/dashboard/inst/reg_color_meta_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   13.468    13.468    <hidden>
+    SLICE_X89Y68         FDRE (Setup_fdre_C_D)       -0.093    13.375    camera_sd_system_i/dashboard/inst/reg_color_meta_reg[3]
+  -------------------------------------------------------------------
+                         required time                         13.375    <hidden>
+                         arrival time                          -0.915    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 12.460    <hidden>
+
+
+
+

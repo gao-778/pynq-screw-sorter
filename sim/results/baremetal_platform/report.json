@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "hardware_access": false,
+  "command": [
+    "${AMD_ROOT}/tps/mingw/10.0.0/win64.o/nt/bin/gcc.exe",
+    "-std=c11",
+    "-O1",
+    "-I",
+    "${WORKSPACE}\\src\\common",
+    "-I",
+    "${WORKSPACE}\\src\\platform",
+    "-I",
+    "${WORKSPACE}\\src\\platform\\linux",
+    "${WORKSPACE}\\sim\\output\\baremetal_platform\\test.c",
+    "-o",
+    "${WORKSPACE}\\sim\\output\\baremetal_platform\\test.exe"
+  ],
+  "stdout": "BAREMETAL_PLATFORM_PASS abi memory_ranges address_binding_order and_axi_drain\n"
+}

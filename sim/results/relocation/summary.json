@@ -1,0 +1,99 @@
+{
+  "hardware_access": false,
+  "checks": [
+    {
+      "name": "linux_build",
+      "status": "PASS",
+      "command": [
+        "${PYTHON}",
+        "${WORKSPACE}\\build\\build.py",
+        "linux",
+        "--host",
+        "--cc",
+        "${AMD_ROOT}/tps/mingw/10.0.0/win64.o/nt/bin/gcc.exe"
+      ]
+    },
+    {
+      "name": "python_api",
+      "status": "PASS",
+      "command": [
+        "${PYTHON}",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "${WORKSPACE}\\sim\\tests",
+        "-p",
+        "test_port.py",
+        "-v"
+      ]
+    },
+    {
+      "name": "state_linux",
+      "status": "PASS",
+      "command": [
+        "${PYTHON}",
+        "${WORKSPACE}\\sim\\test_state_machine.py",
+        "--cc",
+        "${AMD_ROOT}/tps/mingw/10.0.0/win64.o/nt/bin/gcc.exe",
+        "--target",
+        "linux"
+      ]
+    },
+    {
+      "name": "state_baremetal",
+      "status": "PASS",
+      "command": [
+        "${PYTHON}",
+        "${WORKSPACE}\\sim\\test_state_machine.py",
+        "--cc",
+        "${AMD_ROOT}/tps/mingw/10.0.0/win64.o/nt/bin/gcc.exe",
+        "--target",
+        "baremetal"
+      ]
+    },
+    {
+      "name": "baremetal_platform",
+      "status": "PASS",
+      "command": [
+        "${PYTHON}",
+        "${WORKSPACE}\\sim\\test_baremetal_platform.py",
+        "--cc",
+        "${AMD_ROOT}/tps/mingw/10.0.0/win64.o/nt/bin/gcc.exe"
+      ]
+    },
+    {
+      "name": "query_quiet",
+      "status": "PASS",
+      "command": [
+        "${PYTHON}",
+        "${WORKSPACE}\\sim\\motion\\test_query_quiet.py"
+      ]
+    },
+    {
+      "name": "motion_recovery",
+      "status": "PASS",
+      "command": [
+        "${PYTHON}",
+        "${WORKSPACE}\\sim\\motion\\test_motion_recovery.py"
+      ]
+    },
+    {
+      "name": "joint_recovery",
+      "status": "PASS",
+      "command": [
+        "${PYTHON}",
+        "${WORKSPACE}\\sim\\motion\\test_joint_recovery.py"
+      ]
+    },
+    {
+      "name": "coordinates",
+      "status": "PASS",
+      "command": [
+        "${PYTHON}",
+        "${WORKSPACE}\\data\\calibration\\test_obb_coordinates.py"
+      ]
+    }
+  ],
+  "status": "PASS"
+}

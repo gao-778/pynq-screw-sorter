@@ -1,0 +1,4 @@
+interface:
+  display_name: "FPGA 软硬件划分"
+  short_description: "分析数据流、实时期限与资源约束，形成有接口依据的软硬件划分方案。"
+  default_prompt: "使用 $fpga-system-partition，结合提供的工程资料完成分析并给出可复用产物与适用边界。"

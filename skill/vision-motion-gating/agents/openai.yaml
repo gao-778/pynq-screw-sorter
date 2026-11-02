@@ -1,0 +1,4 @@
+interface:
+  display_name: "视觉与动作互斥"
+  short_description: "建立动作占用、结果失效和动作后新帧确认规则，避免使用过期视觉目标。"
+  default_prompt: "使用 $vision-motion-gating，结合提供的工程资料完成分析并给出可复用产物与适用边界。"

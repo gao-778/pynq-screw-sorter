@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-03",
+  "release_tag": "v1.0.1-unified-preview",
+  "baseline_archive": "screwsort_unified_20261102.zip",
+  "baseline_preserved_tag": "v0.1-baremetal-20261102",
+  "scope": "Source publishing, documentation and dependency/package tooling; no inference, model, calibration or robot-motion changes.",
+  "runtime_baseline_byte_comparison": {
+    "status": "PASS",
+    "protected_files": 140,
+    "changed_files": []
+  },
+  "host_environment": {
+    "python": "3.12.14",
+    "os": "Windows",
+    "architecture": "AMD64"
+  },
+  "host_regression": {
+    "status": "PASS",
+    "jobs": 9,
+    "python_api_tests": 18,
+    "state_machine_cases_per_target": 23,
+    "state_machine_targets": [
+      "linux",
+      "baremetal"
+    ],
+    "protocol_groups": 25,
+    "joint_motion_groups": 10,
+    "coordinate_cases": 32,
+    "evidence": "sim/results/publication_20261103/summary.json"
+  },
+  "packaging_regression": {
+    "status": "PASS",
+    "tests": 20,
+    "evidence": "sim/results/publication_20261103/release_packaging.log"
+  },
+  "archive_and_checkout_verification": {
+    "status": "PASS",
+    "git_worktree_manifest": "PASS",
+    "public_source_packaging_tests": 20,
+    "source_missing_dependency_count": 126,
+    "isolated_dependency_import": "PASS",
+    "isolated_imported_host_library_build": "PASS",
+    "archive_export_checks": "CRC and every SHA-256 enforced by build/package.py before a completed export"
+  },
+  "hardware_access": false,
+  "new_unified_board_validation": "NOT_RUN",
+  "vivado_full_implementation_rerun": "NOT_RUN",
+  "arm_cross_compilation_rerun": "NOT_RUN",
+  "hardware_reports": "Inherited from the supplied 2026-11-02 unified archive; not new measurements.",
+  "raw_training_images_included": false,
+  "public_metadata_sanitization": {
+    "changed_metadata_files": 31,
+    "omitted_duplicate_logs": 4,
+    "source_model_and_interface_files_unchanged": true,
+    "historical_report_paths": "Placeholders replace machine-specific paths in public evidence; original records remain in the supplied local archive."
+  }
+}

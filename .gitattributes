@@ -1,15 +1,2 @@
+# Preserve exact bytes for SHA-256 release manifests on every platform.
 * -text
-*.c -text
-*.h -text
-*.v -text
-*.sv -text
-*.vhd -text
-*.xdc -text
-*.tcl -text
-*.py -text
-*.md -text
-*.json -text
-*.bin binary
-*.npz binary
-*.png binary
-*.jpg binary

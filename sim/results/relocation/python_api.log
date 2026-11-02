@@ -1,0 +1,23 @@
+test_alignment_size_range_and_count (test_port.BufferTests.test_alignment_size_range_and_count) ... ok
+test_overlap (test_port.BufferTests.test_overlap) ... ok
+test_valid (test_port.BufferTests.test_valid) ... ok
+test_free_only_after_drain (test_port.LifecycleTests.test_free_only_after_drain) ... ok
+test_legacy_overlay_rejected_before_allocation (test_port.LifecycleTests.test_legacy_overlay_rejected_before_allocation) ... ok
+test_nut_auto_pick_is_rejected_before_queueing (test_port.LifecycleTests.test_nut_auto_pick_is_rejected_before_queueing) ... ok
+test_sort_requests_use_new_native_api (test_port.LifecycleTests.test_sort_requests_use_new_native_api) ... ok
+test_status_includes_fresh_frame_gate_and_four_bins (test_port.LifecycleTests.test_status_includes_fresh_frame_gate_and_four_bins) ... ok
+test_stop_preempts_urgent_work_and_discards_pick (test_port.LifecycleTests.test_stop_preempts_urgent_work_and_discards_pick) ... ok
+test_timeout_pins_allocation (test_port.LifecycleTests.test_timeout_pins_allocation) ... ok
+test_worker_fault_services_native_shutdown_without_freeing_buffers (test_port.LifecycleTests.test_worker_fault_services_native_shutdown_without_freeing_buffers) ... ok
+test_legacy_ip_only_metadata (test_port.MetadataTests.test_legacy_ip_only_metadata) ... ok
+test_missing_or_short_memory_is_still_rejected (test_port.MetadataTests.test_missing_or_short_memory_is_still_rejected) ... ok
+test_real_hwh_bram_memory_classification (test_port.MetadataTests.test_real_hwh_bram_memory_classification) ... ok
+test_file_create_exclusive_and_traversal (test_port.NativeTests.test_file_create_exclusive_and_traversal) ... ok
+test_mmio_exact_mapping_and_faults (test_port.NativeTests.test_mmio_exact_mapping_and_faults) ... ok
+test_motion_disabled_before_hardware_access (test_port.NativeTests.test_motion_disabled_before_hardware_access) ... ok
+test_physical_translation (test_port.NativeTests.test_physical_translation) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.590s
+
+OK

@@ -1,0 +1,69 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite ENTERPRISE license has been detected. Your current license is active and will expire on 12-dec-2026.
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Sun Nov  1 21:19:15 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source {${REFERENCE_HARDWARE}\pynq_cdc_audit.tcl}
+# open_checkpoint {${REFERENCE_HARDWARE}/project/screw_sort_ui.runs/impl_1/final_implemented_cdc.dcp}
+Command: open_checkpoint ${REFERENCE_HARDWARE}/project/screw_sort_ui.runs/impl_1/final_implemented_cdc.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 326.203 ; gain = 0.570
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.487 . Memory (MB): peak = 943.488 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5567 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.210 . Memory (MB): peak = 1125.125 ; gain = 19.125
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 1837.574 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1837.574 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1837.574 ; gain = 0.000
+Read placeStorage: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1864.273 ; gain = 26.699
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1864.273 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.969 . Memory (MB): peak = 1869.340 ; gain = 5.066
+Read Physdb Files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1869.340 ; gain = 31.766
+Restored from archive | CPU: 3.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1869.340 ; gain = 31.766
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1940.188 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1955 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 4 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 16 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 467 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 85 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 1325 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 56 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2026.1 (64-bit) build 6511674
+open_checkpoint: Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1945.828 ; gain = 1630.766
+# set base {.*preview_ddr/inst/reg_run_camera_reg}
+# set meta [get_pins -hier -regexp "${base}\\\[0\\\]/D"]
+# if {[llength $meta]!=1} {error "PYNQ first CDC receiving pin missing or ambiguous"}
+# set path [get_timing_paths -quiet -to $meta -max_paths 1]
+# if {[llength $path]!=1 || [get_property EXCEPTION $path] ne "False Path"} {error "First CDC stage is not excepted"}
+# foreach {from to} {0 1 1 2} {
+#  set q [get_pins -hier -regexp "${base}\\\[$from\\\]/Q"]
+#  set d [get_pins -hier -regexp "${base}\\\[$to\\\]/D"]
+#  if {[llength $q]!=1 || [llength $d]!=1} {error "PYNQ CDC chain missing"}
+#  set path [get_timing_paths -quiet -from $q -to $d -max_paths 1]
+#  if {[llength $path]!=1 || ![string is double -strict [get_property SLACK $path]] || [get_property SLACK $path]<0} {error "Later CDC stage was waived or fails timing"}
+# }
+# puts "PYNQ_MEMORY_CDC_AUDIT_PASS"
+PYNQ_MEMORY_CDC_AUDIT_PASS
+INFO: [Common 17-206] Exiting Vivado at Sun Nov  1 21:20:34 2026...

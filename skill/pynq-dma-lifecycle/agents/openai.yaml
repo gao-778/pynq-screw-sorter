@@ -1,0 +1,4 @@
+interface:
+  display_name: "PYNQ DMA 与内存生命周期"
+  short_description: "明确设备地址、缓存责任和停止排空条件，管理可复用的传输缓冲区生命周期。"
+  default_prompt: "使用 $pynq-dma-lifecycle，结合提供的工程资料完成分析并给出可复用产物与适用边界。"

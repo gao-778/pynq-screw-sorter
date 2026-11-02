@@ -1,0 +1,69 @@
+{
+  "status": "PASS_READ_ONLY_REVIEW",
+  "reviewed_at": "2026-10-31",
+  "release": "${LEGACY_CALIBRATION_RELEASE}",
+  "reviewed_files_sha256": {
+    "arm_bus.c": "0e89234aabe7088371c16338527c7e98aeca027212c22957227f0d4249684a19",
+    "arm_bus.h": "d9318f6d536d655cdc011900d04ea82ae476d5515ce5d1763e1fb3ea864b79f9",
+    "arm_kinematics.c": "01928096fe627fa97b92eced6ecb05c8456caf55a1cb29575fc13080c95aefe7",
+    "arm_kinematics.h": "4cfa765f5bb34722d4cf594f69aceaf2feedaf88d9677476fe44b77fc7cebf5b",
+    "arm_motion.c": "814339cd2ca11edce2ea52de06c1c2c87bb398601fcfa7464f16134d33cd45ee",
+    "arm_motion.h": "c8e3a8769e3d5fab5f328b4631c29975c0be7041b8adfc09606b80beaf5d711d",
+    "auto_pick_api.h": "5e8ef02045ff482b55aa4953b05aab8b3ebbcfbdf212df3b2bc1efb65990739d",
+    "auto_pick_app.h": "7c2253a223fe6c421f2ec42d396e327b2f4b6cee39feb5229596031836003214",
+    "dashboard_app.h": "aed6cdeb5aa7bb7bb99da9a648062ee8004a2309be800494fd2e8a6a49df7c60",
+    "dashboard_font_map.h": "807d464ccb1a22047b31eca99bba9dbdfb68c2cd4040f53ce2bf663eda163d21",
+    "fusion_app.h": "6f9087cc45829155086487f0ad6e8ca22e5e36b5f4d13cf8ecafb4d4a84c78a7",
+    "fusion_clock.h": "8df06512d6e97fc5db434a40826b36b070112c9b55f7b7963884a91e839b0ff9",
+    "fusion_pick_app.h": "3af7e906e5d12dfb4283b89272e9c178caafd43aab01854c5c7109b019983b93",
+    "joystick_app.h": "8e6a90c92170a561e51014a38e322977edacad0ab656eca45a0ad8da8444aa76",
+    "main.c": "923a32adb49d0ce03a38a719c481f9358303665f3ffdff395adb3dc1dc93cac0",
+    "platform_calibration.h": "3bf5dab22619691a5d48b40d599dcc3fc8d46cae66225d23c5962a8e0a2faae0",
+    "platform_coordinates.h": "a8cf459aee089465f6977c41a8ce0f58c2f058719045fb8dc4c36d7e10223ded",
+    "recognition_app.h": "1f7494ff073b6942a0664b62afd3fe7b9d7bfcdbd10a550b0f7928346e109d68",
+    "runtime_diagnostics.h": "314fed8ffb4b344f7fad92f61300f7bf514196bdb0eacc9f1b9ff7327112cb9f",
+    "sensor_exposure.h": "4ff725c41f146f44e7044d375ec0f7583636ff9db38c17425fc11bff836d2bed",
+    "shape_model.h": "980daff328002218f77076b04cc6a2c68357abf30a22e14c5d16cd89f5b94146",
+    "shape_model_before_cap.h": "ad3b4db76464dbbe4501f3cc26f58709cc2fec18fe687d15687700acac75ba57",
+    "shape_model_cap.h": "c87690c7f6ad65aaa8cf1704c1d800fa6c12dfb359fcacdad76ab50e9cb793b3",
+    "shape_model_sixclass_backup.h": "379effc509038a8519c2b7c7fd52467c50129034765b787feb564dc65bcae78b",
+    "vision_failure_diag.h": "c8ec1b9ac940644186608b06882a073f30ba2b1c237571203197807ca471e056",
+    "visual_pick.h": "5c6cb32ef6ac38badadd2face56a69fa0f363c860bb8078d14180cd862d0599f",
+    "workstation_config.h": "54c877a5f9765661aa5056a2b22a064ce3581ec16143650670c83c2d9b6e4508"
+  },
+  "readme_sha256": "9fe3927994668cafc20e0d8a1f553354d3d66ca3b22fcde3f7269f3e1f5dda64",
+  "changed_from_video11p7": [
+    "dashboard_app.h",
+    "main.c",
+    "platform_calibration.h",
+    "visual_pick.h"
+  ],
+  "checks": {
+    "new_H_matches_frozen_fit": true,
+    "no_old_H_in_active_calibration": true,
+    "raw_screen_180_degree_matrix_consistent": true,
+    "positive_x_screen_right_positive_y_screen_up": true,
+    "black_dot_zero": true,
+    "base_in_new_frame_mm": [
+      0,
+      -150
+    ],
+    "command_trims_mm": [
+      7,
+      5
+    ],
+    "command_formula": "Xr=Xnew+7; Yr=Ynew+150+5",
+    "robot_height_values_unchanged": true,
+    "motion_and_fusion_numeric_logic_unchanged": true,
+    "model_sources_identical": true,
+    "exposure_source_identical": true,
+    "ui_only_fov_string_changed": true,
+    "docs_distinguish_fov_from_platform_border": true,
+    "docs_do_not_claim_absolute_grip_accuracy": true
+  },
+  "limits": [
+    "Source and documentation review only; no additional physical motion or startup test.",
+    "Hardware axis bitstream and BOOT packaging are independently validated by the integration and release agents.",
+    "Earlier report files remain historical; this review does not rewrite them."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "shared_sources": {
+    "src/common/app.c": "d676beddeafb30ab4965d15c661c6c2c37960a6c3424ccf94674f077791376b3",
+    "src/common/arm_bus.c": "8107cc406a01eb9ffcedcb8bea1e96d096901c804d9de1e49acab555f940d2cc",
+    "src/common/arm_motion.c": "7a4b1e7c4d543fb44289c1ecd545d3e141b87cff316077c7e6fab45175efc67f",
+    "src/dependencies/arm_kinematics.c": "6e5e9a05ca718aea8b5fb2c7105ed2cd6e167b3b39d728d9baa8bbd764ab4436"
+  },
+  "targets": {
+    "linux": {
+      "define": "SCREWSORT_LINUX",
+      "sources": [
+        "src/platform/linux/linux_platform.c"
+      ]
+    },
+    "baremetal": {
+      "define": "SCREWSORT_BAREMETAL",
+      "sources": [
+        "src/platform/baremetal/baremetal_platform.c",
+        "src/platform/baremetal/main.c"
+      ]
+    }
+  },
+  "model_sha256": "334794129d1a22f804646550d26a5ec613a87c317f978a6852cc120449f08772",
+  "bit_sha256": "66a42b2a617869534d30cd0ef2785589374769e2f263745c7f7facaea404ba0c",
+  "hwh_sha256": "02c051293da2af4be7ffcc5c1e50ffd749bd5185a149487a7c3b0b30a8c133fb",
+  "xsa_sha256": "729e29b8304f5959dee470069d102c44d7145ce4a10529493d1106debbb4a6fb",
+  "standalone_manifest": "board/baremetal/manifest.json",
+  "single_business_core": true,
+  "single_pl_design": true
+}

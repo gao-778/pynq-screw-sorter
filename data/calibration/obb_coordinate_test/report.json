@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "hardware_access": false,
+  "cases": 32,
+  "angles": 16,
+  "source_sha256": {
+    "platform_calibration.h": "b2564a3542e2dad5e91470ee8d003f23c476d70c5110c5a3b6a2813ddd8d2511",
+    "platform_coordinates.h": "047242bb7db97c4266611246db6e545bacbd349bb3fac02116352f2fd951b713",
+    "workstation_config.h": "acb0e0b03cda89a19e7ab3ce35224c1ad38145d7ad9c622104e3d0b5f7f120d6"
+  },
+  "test_sha256": "446830f23eeb9389faaaa5c2ad559c3d7a7f4047c44a5228d5f6554b41f3a1ad",
+  "stdout": "OBB_COORDINATES_PASS cases=32 angles=16 orientations=2 asymmetric_local_center=1 axis_sign_and_units=1\n",
+  "limits": [
+    "Checks software coordinates and direction arithmetic; not mechanical gripper accuracy."
+  ]
+}

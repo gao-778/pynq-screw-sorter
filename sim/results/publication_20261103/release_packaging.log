@@ -1,0 +1,27 @@
+test_archive_cannot_be_written_inside_checkout (test_release_packaging.CheckoutPackagingTests.test_archive_cannot_be_written_inside_checkout) ... ok
+test_generated_output_and_cache_are_excluded (test_release_packaging.CheckoutPackagingTests.test_generated_output_and_cache_are_excluded) ... ok
+test_git_directory_is_pruned_before_walk (test_release_packaging.CheckoutPackagingTests.test_git_directory_is_pruned_before_walk) ... ok
+test_manifest_hashes_refreshed_inventory (test_release_packaging.CheckoutPackagingTests.test_manifest_hashes_refreshed_inventory) ... ok
+test_missing_required_directory_fails_layout (test_release_packaging.CheckoutPackagingTests.test_missing_required_directory_fails_layout) ... ok
+test_public_exclusions_apply_to_archive_contents (test_release_packaging.CheckoutPackagingTests.test_public_exclusions_apply_to_archive_contents) ... ok
+test_public_file_inventory_refresh_preserves_metadata (test_release_packaging.CheckoutPackagingTests.test_public_file_inventory_refresh_preserves_metadata) ... ok
+test_refresh_does_not_bless_invalid_inputs (test_release_packaging.CheckoutPackagingTests.test_refresh_does_not_bless_invalid_inputs) ... ok
+test_repository_support_files_are_manifested (test_release_packaging.CheckoutPackagingTests.test_repository_support_files_are_manifested) ... ok
+test_source_refresh_default_preserves_distribution (test_release_packaging.CheckoutPackagingTests.test_source_refresh_default_preserves_distribution) ... ok
+test_source_refresh_uses_source_file_set (test_release_packaging.CheckoutPackagingTests.test_source_refresh_uses_source_file_set) ... ok
+test_unknown_top_level_file_fails_layout (test_release_packaging.CheckoutPackagingTests.test_unknown_top_level_file_fails_layout) ... ok
+test_worktree_git_file_is_accepted_but_never_packaged (test_release_packaging.CheckoutPackagingTests.test_worktree_git_file_is_accepted_but_never_packaged) ... ok
+test_existing_different_dependency_is_not_overwritten (test_release_packaging.DependencyImportTests.test_existing_different_dependency_is_not_overwritten) ... ok
+test_legacy_layout_import (test_release_packaging.DependencyImportTests.test_legacy_layout_import) ... ok
+test_missing_dependency_causes_no_partial_import (test_release_packaging.DependencyImportTests.test_missing_dependency_causes_no_partial_import) ... ok
+test_outside_destination_rejected (test_release_packaging.DependencyImportTests.test_outside_destination_rejected) ... ok
+test_outside_legacy_source_rejected (test_release_packaging.DependencyImportTests.test_outside_legacy_source_rejected) ... ok
+test_unified_layout_import_and_idempotence (test_release_packaging.DependencyImportTests.test_unified_layout_import_and_idempotence) ... ok
+test_wrong_source_hash_causes_no_partial_import (test_release_packaging.DependencyImportTests.test_wrong_source_hash_causes_no_partial_import) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.658s
+
+OK
+Release manifest refreshed: source
+Release manifest refreshed: source

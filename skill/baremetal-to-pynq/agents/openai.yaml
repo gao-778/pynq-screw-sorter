@@ -1,0 +1,4 @@
+interface:
+  display_name: "裸机 C 到 PYNQ 分层移植"
+  short_description: "分离业务状态机与平台访问，在 Python 管理的会话中复用 Linux C 和 FPGA 逻辑。"
+  default_prompt: "使用 $baremetal-to-pynq，结合提供的工程资料完成分析并给出可复用产物与适用边界。"

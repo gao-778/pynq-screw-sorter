@@ -1,0 +1,28 @@
+In file included from ${WORKSPACE}\src\common\app.c:139:
+${WORKSPACE}\src\common\fusion_app.h:211:13: warning: 'fusion_status_line' defined but not used [-Wunused-function]
+  211 | static void fusion_status_line(char *line,unsigned capacity){
+      |             ^~~~~~~~~~~~~~~~~~
+${WORKSPACE}\src\common\fusion_app.h:202:13: warning: 'fusion_menu_confirm' defined but not used [-Wunused-function]
+  202 | static void fusion_menu_confirm(void){
+      |             ^~~~~~~~~~~~~~~~~~~
+In file included from ${WORKSPACE}\src\common\fusion_app.h:40:
+${WORKSPACE}\src\common\auto_pick_app.h:236:13: warning: 'auto_pick_toggle' defined but not used [-Wunused-function]
+  236 | static void auto_pick_toggle(void){auto_pick_toggle_mode(AUTO_PICK_CLASS_PICK);}
+      |             ^~~~~~~~~~~~~~~~
+In file included from ${WORKSPACE}\src\common\fusion_app.h:39:
+${WORKSPACE}\src\common\fusion_pick_app.h:46:12: warning: 'fusion_pick_read' defined but not used [-Wunused-function]
+   46 | static int fusion_pick_read(VisualPickTarget *t,const char **reason)
+      |            ^~~~~~~~~~~~~~~~
+In file included from ${WORKSPACE}\src\common\app.c:136:
+${WORKSPACE}\src\common\sensor_exposure.h:311:12: warning: 'sensor_configure_balanced' defined but not used [-Wunused-function]
+  311 | static int sensor_configure_balanced(void) {return sensor_configure_mode(SENSOR_PROFILE_BALANCED);}
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~
+${WORKSPACE}\src\common\sensor_exposure.h:305:12: warning: 'sensor_configure_profile' defined but not used [-Wunused-function]
+  305 | static int sensor_configure_profile(unsigned divider) {
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~
+${WORKSPACE}\src\common\sensor_exposure.h:250:12: warning: 'apply_exposure' defined but not used [-Wunused-function]
+  250 | static int apply_exposure(unsigned mode) {
+      |            ^~~~~~~~~~~~~~
+${WORKSPACE}\src\common\sensor_exposure.h:148:12: warning: 'load_exposure_config' defined but not used [-Wunused-function]
+  148 | static int load_exposure_config(void) {
+      |            ^~~~~~~~~~~~~~~~~~~~

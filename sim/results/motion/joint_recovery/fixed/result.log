@@ -1,0 +1,11 @@
+JOINT_CHECK name=no_fault_reference state=COMPLETED moves=512 queries=62 stops=0 inject_hits=0 retries=0
+JOINT_CHECK name=initial_S5_three_no_reply state=COMPLETED moves=512 queries=69 stops=0 inject_hits=3 retries=2
+JOINT_CHECK name=initial_S6_three_no_reply state=COMPLETED moves=512 queries=70 stops=0 inject_hits=3 retries=2
+JOINT_CHECK name=BIN_APPROACH_S5_then_BIN_DEPART_S6_two_episodes state=COMPLETED moves=512 queries=73 stops=0 inject_hits=6 retries=4
+JOINT_CHECK name=gripper_S1_read_only_recovery state=COMPLETED moves=512 queries=65 stops=0 inject_hits=3 retries=2
+JOINT_CHECK name=wrist_S2_read_only_recovery state=COMPLETED moves=512 queries=65 stops=0 inject_hits=3 retries=2
+JOINT_CHECK name=permanent_initial_no_reply_no_MOVE state=ERROR moves=0 queries=14 stops=0 inject_hits=6 retries=4
+JOINT_CHECK name=permanent_depart_no_reply_six_STOP_no_replay state=ERROR moves=420 queries=66 stops=6 inject_hits=6 retries=4
+JOINT_CHECK name=partial_reply_strict_fail state=ERROR moves=299 queries=42 stops=6 inject_hits=3 retries=2
+JOINT_CHECK name=UART_LINE_strict_fail state=ERROR moves=299 queries=42 stops=6 inject_hits=3 retries=2
+JOINT_RECOVERY_FIXED_PASS groups=10 hardware_access=false full_MOVE_trace=512

@@ -1,0 +1,127 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Sun Nov  1 21:17:51 2026
+| Host         : LAPTOP-R1EJQOBE running 64-bit major release  (build 9200)
+| Command      : check_timing -verbose -file multiclass_timing_coverage.rpt
+| Design       : camera_sd_system_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Physopt postRoute
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (8)
+6. checking no_output_delay (17)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (8)
+------------------------------
+ There are 7 input ports with no input delay specified. (HIGH)
+
+cam_scl
+cam_sda
+joy_keys_n[0]
+joy_keys_n[1]
+joy_keys_n[2]
+joy_keys_n[3]
+joy_keys_n[4]
+
+ There is 1 input port with no input delay but user has a false path constraint. (MEDIUM)
+
+servo_rxd
+
+
+6. checking no_output_delay (17)
+--------------------------------
+ There are 14 ports with no output delay specified. (HIGH)
+
+cam_rst_n
+cam_scl
+cam_sda
+hdmi_clk_p
+hdmi_d_p[0]
+hdmi_d_p[1]
+hdmi_d_p[2]
+led[0]
+led[1]
+led[2]
+led[3]
+save_rgb[0]
+save_rgb[1]
+save_rgb[2]
+
+ There are 3 ports with no output delay but user has a false path constraint (MEDIUM)
+
+servo_rx_en[0]
+servo_tx_en[0]
+servo_txd
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+

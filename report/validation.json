@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "project": "screwsort",
+  "shared_core": true,
+  "python_api_tests": 18,
+  "shared_state_machine_checks_per_target": 23,
+  "state_machine_targets": [
+    "linux",
+    "baremetal"
+  ],
+  "protocol_groups": 25,
+  "joint_motion_groups": 10,
+  "obb_coordinate_cases": 32,
+  "baremetal_platform": "PASS",
+  "linux_arm_cross_compile": "PASS",
+  "standalone_elf_boot_build": "PASS",
+  "rtl_dynamic_memory_and_drain": "PASS",
+  "clean_vivado_project_generation": "PASS",
+  "full_implementation_this_release": "NOT_RUN",
+  "shared_pl_implementation_reports": "included",
+  "reference_hardware_sessions": {
+    "baremetal": "MAINTAINER_CONFIRMED_COMPLETE",
+    "pynq_fix": "MAINTAINER_CONFIRMED_COMPLETE"
+  },
+  "new_unified_build_board_session": "NOT_RUN",
+  "agent_hardware_access": false,
+  "relocated_source_regression": "PASS",
+  "hardware_export_and_contract_update": "PASS",
+  "evidence_origin": "Inherited 2026-11-02 validation records; see publication_review_20261103.json for checks rerun during source publication."
+}
