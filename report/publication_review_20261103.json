@@ -31,13 +31,13 @@
   },
   "packaging_regression": {
     "status": "PASS",
-    "tests": 20,
+    "tests": 21,
     "evidence": "sim/results/publication_20261103/release_packaging.log"
   },
   "archive_and_checkout_verification": {
     "status": "PASS",
     "git_worktree_manifest": "PASS",
-    "public_source_packaging_tests": 20,
+    "public_source_packaging_tests": 21,
     "source_missing_dependency_count": 126,
     "isolated_dependency_import": "PASS",
     "isolated_imported_host_library_build": "PASS",

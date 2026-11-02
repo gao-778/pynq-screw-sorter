@@ -1,4 +1,5 @@
 test_archive_cannot_be_written_inside_checkout (test_release_packaging.CheckoutPackagingTests.test_archive_cannot_be_written_inside_checkout) ... ok
+test_exported_manifest_matches_refreshed_checkout_bytes (test_release_packaging.CheckoutPackagingTests.test_exported_manifest_matches_refreshed_checkout_bytes) ... ok
 test_generated_output_and_cache_are_excluded (test_release_packaging.CheckoutPackagingTests.test_generated_output_and_cache_are_excluded) ... ok
 test_git_directory_is_pruned_before_walk (test_release_packaging.CheckoutPackagingTests.test_git_directory_is_pruned_before_walk) ... ok
 test_manifest_hashes_refreshed_inventory (test_release_packaging.CheckoutPackagingTests.test_manifest_hashes_refreshed_inventory) ... ok
@@ -20,8 +21,9 @@ test_unified_layout_import_and_idempotence (test_release_packaging.DependencyImp
 test_wrong_source_hash_causes_no_partial_import (test_release_packaging.DependencyImportTests.test_wrong_source_hash_causes_no_partial_import) ... ok
 
 ----------------------------------------------------------------------
-Ran 20 tests in 0.658s
+Ran 21 tests in 0.540s
 
 OK
+Release manifest refreshed: source
 Release manifest refreshed: source
 Release manifest refreshed: source

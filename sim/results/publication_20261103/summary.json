@@ -97,7 +97,7 @@
     {
       "name": "release_packaging",
       "status": "PASS",
-      "tests": 20,
+      "tests": 21,
       "command": [
         "python",
         "-m",

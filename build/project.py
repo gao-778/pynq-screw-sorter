@@ -8,7 +8,7 @@ def read(p):return json.loads(p.read_text(encoding='utf-8'))
 def require(condition,message):
  if not condition:raise RuntimeError(message)
 def write_json(p,value):
- p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+ p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
 def sources(target):
  return [ROOT/p for p in CONFIG['shared_sources']+CONFIG['targets'][target]['sources']]
 def include_dirs(target):

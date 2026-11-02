@@ -163,6 +163,17 @@ class CheckoutPackagingTests(unittest.TestCase):
         self.assertEqual(value['files']['report/open_source_files.json'],hashlib.sha256(inventory.read_bytes()).hexdigest())
         self.assertEqual(json.loads(inventory.read_text())['files'],sorted(value['files']))
 
+    def test_exported_manifest_matches_refreshed_checkout_bytes(self):
+        put(self.root,'build/release_manifest.json',json.dumps({'distribution':'source','files':{}}).encode())
+        with patch.object(sys,'argv',['package.py','--refresh']), \
+             patch.object(package,'check',return_value={'status':'PASS'}):package.main()
+        checkout=(self.root/'build/release_manifest.json').read_bytes()
+        archive=package.write_archive(Path(self.temp.name)/'refreshed_source.zip',package.manifest(True))
+        with zipfile.ZipFile(archive) as z:
+            self.assertEqual(z.read('screwsort/build/release_manifest.json'),checkout)
+        self.assertNotIn(b'\r\n',checkout)
+        self.assertTrue(checkout.endswith(b'\n'))
+
     def test_archive_cannot_be_written_inside_checkout(self):
         with self.assertRaises(ValueError):
             package.write_archive(self.root/'build/public.zip',package.manifest(True))
