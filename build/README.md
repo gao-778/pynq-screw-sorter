@@ -1,6 +1,6 @@
 # 构建与发布
 
-统一入口为 `python build/build.py <target>`；[project.json](project.json) 定义共享源码、两个 PS 编译目标及硬件接口。先确认 [复现范围](../report/reproducibility.md)：公开源码不含所有构建输入，完整主机回归也需要匹配运动学实现。
+统一入口为 `python build/build.py <target>`；[project.json](project.json) 定义共享源码、两个 PS 编译目标及硬件接口。先确认 [复现范围](../report/reproducibility.md)：公开源码不含所有构建输入，完整主机回归还需要匹配运动学实现和同版 HWH 元数据；逐步说明见 [完整复现指南](../report/quickstart.md)。
 
 | target | 作用 | 输出/限制 |
 |---|---|---|

@@ -1,6 +1,6 @@
 # 板上运行与操作
 
-统一版共用一套 RTL/C 核心，但裸机和 PYNQ/Linux 分别启动。当前包的整机实测仍待完成，状态见 [验证说明](../report/validation_scope.md)。
+统一版共用一套 RTL/C 核心，但裸机和 PYNQ/Linux 分别启动。本仓库基于维护者已上板验收通过的文件整理，来源与复现记录见 [验证说明](../report/validation_scope.md)。
 
 ## PYNQ
 
@@ -38,4 +38,4 @@ Python 的 `status()`、`results()`、`metrics()` 和 `messages()` 提供状态�
 python3 board/capture_evidence.py --seconds 60 --label recognition
 ```
 
-该脚本记录环境和识别过程，不启用机械臂。输出完成不等于准确率自动达标，仍需真实类别和统计。截图、完整分拣验收及失败恢复证据按 [最终验收步骤](../report/validation_scope.md) 单独保存。
+该脚本记录环境和识别过程，不启用机械臂。输出完成不等于准确率自动达标，仍需真实类别和统计。截图、完整分拣验收及失败恢复证据按 [复现检查步骤](../report/validation_scope.md) 单独保存。
