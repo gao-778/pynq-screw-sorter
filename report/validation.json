@@ -22,9 +22,14 @@
     "baremetal": "MAINTAINER_CONFIRMED_COMPLETE",
     "pynq_fix": "MAINTAINER_CONFIRMED_COMPLETE"
   },
-  "new_unified_build_board_session": "NOT_RUN",
   "agent_hardware_access": false,
   "relocated_source_regression": "PASS",
   "hardware_export_and_contract_update": "PASS",
-  "evidence_origin": "Inherited 2026-11-02 validation records; see publication_review_20261103.json for checks rerun during source publication."
+  "evidence_origin": "Inherited 2026-11-02 validation records; see publication_review_20261103.json for checks rerun during source publication.",
+  "board_acceptance": {
+    "status": "MAINTAINER_CONFIRMED_BASELINE_PASS",
+    "record": "report/board_acceptance_20261103.json",
+    "updated": "2026-11-03",
+    "scope": "Maintainer confirms the supplied files underlying the GitHub source passed board acceptance. Source publication and this documentation update do not alter runtime logic."
+  }
 }

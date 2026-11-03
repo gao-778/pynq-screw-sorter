@@ -44,7 +44,6 @@
     "archive_export_checks": "CRC and every SHA-256 enforced by build/package.py before a completed export"
   },
   "hardware_access": false,
-  "new_unified_board_validation": "NOT_RUN",
   "vivado_full_implementation_rerun": "NOT_RUN",
   "arm_cross_compilation_rerun": "NOT_RUN",
   "hardware_reports": "Inherited from the supplied 2026-11-02 unified archive; not new measurements.",
@@ -54,5 +53,11 @@
     "omitted_duplicate_logs": 4,
     "source_model_and_interface_files_unchanged": true,
     "historical_report_paths": "Placeholders replace machine-specific paths in public evidence; original records remain in the supplied local archive."
+  },
+  "board_acceptance": {
+    "status": "MAINTAINER_CONFIRMED_BASELINE_PASS",
+    "record": "report/board_acceptance_20261103.json",
+    "updated": "2026-11-03",
+    "scope": "Maintainer confirms the supplied files underlying the GitHub source passed board acceptance. Source publication and this documentation update do not alter runtime logic."
   }
 }

@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-03",
+  "release_tag": "v1.0.2-unified",
+  "status": "MAINTAINER_CONFIRMED_BASELINE_PASS",
+  "confirmation": {
+    "source": "Project maintainer confirmation in the publication update request on 2026-11-03",
+    "statement": "GitHub 文件是根据本人已上板验收通过的文件整理的。",
+    "scope": "Board acceptance applies to the maintainer-used baseline. This update verifies unchanged runtime files and reproduction steps; it does not report a new automated hardware session or additional measured accuracy."
+  },
+  "source_baseline": {
+    "archive": "screwsort_unified_20261102.zip",
+    "sha256": "46c6bcc9a72e763aa0044626355c60d52f0c862343087fb99a71b7a0a1ec4a66",
+    "public_baseline_commit": "d3a3ccd852240fe3cc134114f9419cb9a20c8e41"
+  },
+  "runtime_correspondence": {
+    "status": "PASS",
+    "protected_file_count_in_complete_baseline": 140,
+    "public_files_compared": 134,
+    "public_files_identical": 134,
+    "excluded_files_with_matching_dependency_hashes": 6,
+    "changed_runtime_files": [],
+    "scope": [
+      "src/common",
+      "src/platform",
+      "src/python",
+      "src/fpga",
+      "src/training",
+      "data/model"
+    ],
+    "original_full_copy_identical_files": 140,
+    "calibration_contract": "report/correspondence.json and data/calibration"
+  },
+  "baseline_artifact_sha256": {
+    "BOOT": "15b9b77db221bd0314a1bedbee7c06aaedd6a7712807cb5bb5c5d36849b837a1",
+    "BIT": "66a42b2a617869534d30cd0ef2785589374769e2f263745c7f7facaea404ba0c",
+    "HWH": "02c051293da2af4be7ffcc5c1e50ffd749bd5185a149487a7c3b0b30a8c133fb",
+    "XSA": "729e29b8304f5959dee470069d102c44d7145ce4a10529493d1106debbb4a6fb",
+    "model": "334794129d1a22f804646550d26a5ec613a87c317f978a6852cc120449f08772"
+  },
+  "reproduction_record": "report/reproduction_review_20261103.json",
+  "hardware_access_this_update": false,
+  "runtime_changes_this_update": false,
+  "evidence_policy": "Maintainer-confirmed physical acceptance and rerun host/compiler checks are separate. Logs or BOOT files from later patched builds are not assigned to this baseline. Original device environment and measured performance are not invented."
+}

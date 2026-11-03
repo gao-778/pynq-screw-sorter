@@ -22,7 +22,7 @@ PL 执行相机采集、DDR 图像访问、阈值与连通域、旋转 ROI、量
 
 原统一包归档记录 18 项 Python/C API、两种目标各 23 组生产状态机、25 组串口协议/运动恢复与 10 组联合运动、32 组 OBB 坐标、裸机平台及 RTL 动态地址和事务排空检查；还包含 Linux ARM 共享库交叉编译、standalone ELF/BOOT 构建及 Vivado 工程/IP 生成记录。原状态见 [validation.json](validation.json)，本轮具体复测范围见 [publication_review_20261103.json](publication_review_20261103.json)。工程生成通过不等于本轮完整综合实现通过。
 
-参考裸机系统及 PYNQ fix 系统由维护者确认完成历史实机联调。新统一源码的最终产物尚未再次进行整机实测，Notebook 也未携带本版本执行输出。现场端到端时延、分类准确率、分拣尝试数/成功数和持续运行数据，需按 [最终验收](validation_scope.md) 从实际运行记录得到。
+维护者于 2026-11-03 确认本 GitHub 整理版来源于已上板验收通过的文件；模型、RTL、标定和机械臂核心保持原样。既有裸机/PYNQ fix 联调记录与本轮复现结果分别保留，见 [验收记录](board_acceptance_20261103.json)。Notebook 是交互入口模板，其空输出不作为实机测量证据。现场端到端时延、分类准确率、分拣尝试数/成功数和持续运行数据，需按 [复现检查](validation_scope.md) 从实际运行记录得到。
 
 ## 复现与交付
 

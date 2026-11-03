@@ -2,7 +2,7 @@
 
 入口为 `from screwsortmint import ScrewSortMint`，导入路径是项目 `src/python`。它通过 `ctypes` 调用同一 C 业务核心；相机图像处理与 CNN 继续位于 PL。
 
-本接口有实现和离线测试，但当前统一构建尚待完整上板验收。运行前须具备匹配 BIT/HWH、在 ARM 环境编译的共享库、PYNQ 依赖和设备权限；公开源码的缺件说明见 [复现范围](reproducibility.md)。
+本接口复用维护者已确认上板通过基线的业务核心，并配有接口实现和离线测试；具体证据范围见 [验证记录](validation_scope.md)。运行前须具备匹配 BIT/HWH、在 ARM 环境编译的共享库、PYNQ 依赖和设备权限；公开源码的缺件说明见 [复现范围](reproducibility.md)。
 
 | 方法 | 用法与返回含义 |
 |---|---|

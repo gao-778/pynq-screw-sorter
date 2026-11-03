@@ -4,7 +4,7 @@
 
 本分支整理为 **裸机 C 部署 + PYNQ/Linux 调试与复现入口**。两种目标共用 C 业务核心、MC18 模型、RTL 和标定配置，通过平台适配层处理内存、文件、计时和控制台。Python/Jupyter 调用 C 共享库组织任务，CNN 仍在 PL 执行。
 
-**当前为统一版预览发布。** 已有离线回归、编译和参考硬件报告；这份统一构建尚未重新完成整机上板验收。公开源码也不包含全部运行依赖，不能仅 clone 后直接启动。先读 [复现范围与依赖](report/reproducibility.md) 和 [验证状态](report/validation_scope.md)。
+**本仓库基于维护者已上板验收通过的版本整理。** 维护者于 2026-11-03 确认该来源；公开整理保持模型、RTL、标定和机械臂核心不变，并提供裸机与 PYNQ/Linux 入口。上板确认来源与可重复检查见 [验收与复现记录](report/board_acceptance_20261103.json)。公开源码也不包含全部运行依赖，不能仅 clone 后直接启动。先读 [复现范围与依赖](report/reproducibility.md) 和 [验证状态](report/validation_scope.md)。
 
 ## 功能
 
@@ -21,7 +21,7 @@
 | 相机 | OV5640 DVP；参考装置为 ATK-MC5640 V1.2 |
 | 显示 | HDMI 输出，1280×720；扫描刷新与相机新帧、识别频率分别计量 |
 | 执行器 | 六个总线舵机，ID 1–6，半双工串口与独立供电 |
-| PYNQ 入口 | 板卡对应的 PYNQ Linux 系统，Python 3.10+、NumPy、gcc、Jupyter；最终验收的镜像/PYNQ/依赖版本尚待实机记录 |
+| PYNQ 入口 | 板卡对应的 PYNQ Linux 系统，Python 3.10+、NumPy、gcc、Jupyter；部署时记录实际镜像、PYNQ 和依赖版本 |
 | FPGA 构建 | Vivado 2026.1 |
 | 裸机构建 | Windows、Vitis 2026.1、与硬件接口匹配的 standalone BSP 和 FSBL |
 
@@ -46,7 +46,7 @@
 | 你的材料 | 可直接做什么 | 完整运行还需什么 |
 |---|---|---|
 | 仅本 GitHub 源码 | 阅读算法和接口、检查公开文件一致性、运行独立发布测试 | 匹配的本地依赖，以及构建或取得成对的 BIT/HWH |
-| 有权使用的完整统一发行包 | 按清单核验文件、使用配套构建输入与硬件产物 | 对最终装置进行上板验收 |
+| 有权使用的完整统一发行包 | 按清单核验文件、使用配套构建输入与硬件产物 | 匹配开发环境、接线和装置标定 |
 | 需要从数据重新训练 | 阅读训练和量化流程 | 原始照片、标注及训练环境；这些未随代码完整公开 |
 
 公开包排除了 BSP/FSBL、部分运动学实现、相机配置、字库及含这些材料的运行二进制。目前没有这些缺件的公开下载地址。已有合法完整包的使用者可导入；不能取得依赖时，可复现范围以 [矩阵](report/reproducibility.md) 为准。
@@ -57,7 +57,7 @@ python build/import_dependencies.py --release /path/to/full/screwsort
 python build/verify.py
 ```
 
-导入器也兼容清单列出的旧发行目录，并在复制前逐项验证 SHA-256。导入构建依赖不会自动把公开仓库变成已验收的运行包。之后需按下节构建硬件，或使用同一完整包的匹配硬件产物；详细步骤见 [复现教程](report/reproducibility.md)。
+导入器也兼容清单列出的旧发行目录，并在复制前逐项验证 SHA-256。文件导入与实机运行是不同检查步骤。之后需按下节构建硬件，或使用同一完整包的匹配硬件产物；详细步骤见 [复现教程](report/reproducibility.md)。
 
 ## PYNQ 调试入口
 
@@ -126,13 +126,13 @@ python build/build.py hardware --vivado D:/AMD/2026.1/Vivado/bin/vivado.bat --ou
 python build/verify.py
 # 独立发布检查回归，不访问板卡
 python -m unittest discover -s sim/tests -p test_release_packaging.py -v
-# 以下完整主机回归需先补齐本地依赖
+# 以下完整主机回归需先补齐本地依赖和同版 HWH（见复现教程）
 python sim/run_checks.py --cc /path/to/gcc
 # 有 Vivado 时可追加 RTL 仿真
 python sim/run_checks.py --cc /path/to/gcc --vivado-bin /path/to/Vivado/bin
 ```
 
-原始发行验证记录保留在 `sim/results/` 和 `build/reports/`；新运行输出到 `sim/output/`。本轮发布整理与复测记录见 [发布复核](report/publication_review_20261103.json)。新统一版现场验收仍待完成，具体步骤和记录字段见 [验证说明](report/validation_scope.md)。
+原始发行验证记录保留在 `sim/results/` 和 `build/reports/`；新运行输出到 `sim/output/`。首次发布整理见 [发布复核](report/publication_review_20261103.json)，本轮重新导入、10 组主机回归和三项目标构建见 [复现核验](report/reproduction_review_20261103.json)。维护者的上板通过确认与本轮复现记录见 [验证说明](report/validation_scope.md)；更换装置时按其中步骤核对实际环境与机械参数。
 
 公开源码应从经过核验的工作副本导出，输出文件放在项目目录外：
 

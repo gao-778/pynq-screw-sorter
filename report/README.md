@@ -10,7 +10,9 @@
 - [交付清单](delivery_checklist.md)
 - [文件与产物对应](correspondence.json)
 - [原统一包验证记录](validation.json)
-- [本轮发布复核](publication_review_20261103.json)
+- [首次发布复核](publication_review_20261103.json)
+- [本轮复现核验](reproduction_review_20261103.json)
+- [上板验收来源](board_acceptance_20261103.json)
 - [许可与发行范围](licenses/third_party.md)
 
-新统一包未完成现场验收时，不以历史参考系统的成功记录代替该包实测。
+维护者已确认本仓库源自上板验收通过文件。验收确认、文件对应和本轮复现检查分别见 [验收记录](board_acceptance_20261103.json)，便于区分实物结果与电脑端检查。

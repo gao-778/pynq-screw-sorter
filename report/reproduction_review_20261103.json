@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-03",
+  "release_tag": "v1.0.2-unified",
+  "status": "PASS_WITH_COMPLETE_DEPENDENCIES_AND_MATCHING_HARDWARE",
+  "runtime_revision_tested": "d3a3ccd852240fe3cc134114f9419cb9a20c8e41",
+  "runtime_changes_in_release": false,
+  "method": "Clean git archive, hash-checked dependency import, matching hardware metadata, host regression and actual target compilation.",
+  "preconditions": {
+    "local_build_inputs": 126,
+    "source": "Same compatible complete unified package, with legal access",
+    "hwh": "board/hardware/screwsort.hwh matching board/overlay_contract.json",
+    "boot_build": "Matching BIT plus BSP/FSBL from the same full package; Vitis 2026.1",
+    "public_source_only": "Public integrity and 21 packaging tests are available; full regression/builds require the declared dependencies."
+  },
+  "source_checks": [
+    {
+      "name": "public_verify",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "name": "public_packaging_tests",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "name": "dependency_import",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "name": "imported_verify",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "name": "host_regression_with_matching_hwh",
+      "status": "PASS",
+      "returncode": 0
+    }
+  ],
+  "host_pipeline": {
+    "status": "PASS",
+    "jobs": 10,
+    "checks": [
+      {
+        "name": "linux_build",
+        "status": "PASS"
+      },
+      {
+        "name": "python_api",
+        "status": "PASS"
+      },
+      {
+        "name": "release_packaging",
+        "status": "PASS"
+      },
+      {
+        "name": "state_linux",
+        "status": "PASS"
+      },
+      {
+        "name": "state_baremetal",
+        "status": "PASS"
+      },
+      {
+        "name": "baremetal_platform",
+        "status": "PASS"
+      },
+      {
+        "name": "query_quiet",
+        "status": "PASS"
+      },
+      {
+        "name": "motion_recovery",
+        "status": "PASS"
+      },
+      {
+        "name": "joint_recovery",
+        "status": "PASS"
+      },
+      {
+        "name": "coordinates",
+        "status": "PASS"
+      }
+    ],
+    "python_api_tests": 18,
+    "packaging_tests": 21,
+    "state_machine_cases_per_target": 23,
+    "targets": [
+      "linux",
+      "baremetal"
+    ],
+    "protocol_groups": 25,
+    "joint_motion_groups": 10,
+    "coordinate_cases": 32
+  },
+  "target_builds": [
+    {
+      "name": "linux_arm_cross_compile",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "name": "baremetal_compile",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "name": "boot_package",
+      "status": "PASS",
+      "returncode": 0
+    }
+  ],
+  "rebuilt_baremetal": {
+    "status": "PASS",
+    "bit_sha256": "66a42b2a617869534d30cd0ef2785589374769e2f263745c7f7facaea404ba0c",
+    "model_sha256": "334794129d1a22f804646550d26a5ec613a87c317f978a6852cc120449f08772",
+    "elf_sha256": "ff032a5efbc6c5256899e65791511b6db59e5a2086d194e150f84e7c6a6d4bf0",
+    "boot_sha256": "9ab80a56a987d08a85beb9c8322e6e4ffd2038f47fd03345874b3523b2c111b4",
+    "fsbl_sha256": "5075ceb4dae4aba7aabf09fcdaf22ea2a405d3056a5c0f83d65fa7f3ed0e0d89"
+  },
+  "boot_partition_checks": {
+    "status": "PASS",
+    "partition_count": 4,
+    "bit_payload_byte_order": "swapped32"
+  },
+  "fixes_to_reproduction_instructions": [
+    "Full API metadata tests require the same-release HWH in addition to the 126 imported local inputs. build/import_dependencies.py deliberately does not copy hardware artifacts."
+  ],
+  "initial_attempts": [
+    {
+      "issue": "Windows sandbox temporary directory ACL denied access",
+      "resolution": "Rerun in the permitted native host environment; passed."
+    },
+    {
+      "issue": "Dependency-only API tests could not find matching HWH",
+      "resolution": "Copy and hash-check same-release hardware metadata, document prerequisite, then rerun full pipeline; passed."
+    }
+  ],
+  "hardware_access": false,
+  "vivado_full_implementation_rerun": false,
+  "artifact_scope": "Rebuilt BOOT is a build/partition check artifact. It is not substituted for the maintainer-accepted original BOOT or claimed to have the original BOOT hash.",
+  "board_acceptance_record": "report/board_acceptance_20261103.json",
+  "raw_evidence_sha256": {
+    "reproduction.json": "ca482942cf7071bfa66ba4462cf446c61a148165d24a4bde497a6b3bc75bf6d2",
+    "compile_targets.json": "9f8ba2863f3883b00c8d3d74885dcd48b24f8f1ea87578e1f9360b9a60b1fd7c",
+    "complete_host_regression.log": "404258d360805ad5b896eaa728c53b7f3bf99d6fffe0e6b6fb15cc9682ce8318",
+    "public_packaging_tests.log": "d24339d82d45ae1c34c4a1fb1714e49d74d3d438d65234724d785c86b6fac7fe"
+  }
+}

@@ -91,7 +91,7 @@ RasAdapter 的 TXD/RXD 按主机方向命名，不要将上表再交叉一次。
 
 ## 首次启动：先选择运行方式
 
-同一块板分别启动裸机或 PYNQ Linux，不能在同一次启动中同时占有硬件。新统一包的完整实机验收尚待完成；本节给出操作顺序，不把历史接线核对视为新包的验收。
+同一块板分别启动裸机或 PYNQ Linux，不能在同一次启动中同时占有硬件。本仓库的上板确认来源见 [验收记录](board_acceptance_20261103.json)；本节用于在匹配装置上复现接线和启动。
 
 ### 裸机专用 SD 卡
 
@@ -104,7 +104,7 @@ RasAdapter 的 TXD/RXD 按主机方向命名，不要将上表再交叉一次。
 ### PYNQ Linux 系统 SD 卡
 
 1. 用 PYNQ-Z2 对应的 Linux 镜像启动，保留该系统自带的 BOOT 和分区布局；**不要复制本项目裸机 BOOT 覆盖系统启动文件**。
-2. 当前统一包尚未实测固定镜像/PYNQ 软件版本。先运行 `python3 board/environment.py` 读取内核、Python、PYNQ 等环境信息，另记录镜像发行号，并确认所用 Python/Jupyter 环境能访问板卡设备。
+2. 记录所用镜像与 PYNQ 软件版本。先运行 `python3 board/environment.py` 读取内核、Python、PYNQ 等环境信息，另记录镜像发行号，并确认所用 Python/Jupyter 环境能访问板卡设备。
 3. 把具有匹配依赖和硬件产物的工程复制到板上，例如 `/home/xilinx/screwsort`。公开源码用户先完成 [依赖补齐](reproducibility.md)，不能仅 clone 后直接运行。
 4. 在工程根目录运行 `python3 build/build.py linux`。此命令编译本机 ARM 共享库，不是使用 Windows 主机测试 DLL。
 5. 运行 `python3 board/run.py --seconds 30` 或打开 [Notebook](../board/notebooks/screwsort.ipynb)。Python 加载同名 BIT/HWH、分配 DDR 缓冲区并启动 C 服务，默认不启用机械臂运动。
